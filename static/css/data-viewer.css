@@ -24,9 +24,8 @@
 
 /* Domain Buttons */
 #weave-domain-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
     gap: 0.5rem;
     margin-bottom: 2rem;
 }

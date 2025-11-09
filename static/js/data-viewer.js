@@ -194,7 +194,10 @@ class WeaveDataViewer {
             const button = document.createElement('button');
             button.className = 'domain-button';
             button.setAttribute('data-domain', domain);
-            button.innerHTML = `${domain.replace('_', ' ')} <span class="count">(${data.count})</span>`;
+            
+            // Remove the count display, show only the domain name
+            button.innerHTML = `${domain.replace('_', ' ')}`;
+            
             button.addEventListener('click', () => this.showDomainSample(domain));
             domainButtonsContainer.appendChild(button);
         });
@@ -284,22 +287,6 @@ class WeaveDataViewer {
                 contentHtml = `<div class="chat-text">${chat.content}</div>`;
             }
             
-            // Add key points if available
-            let keyPointHtml = '';
-            if (chat.key_point) {
-                keyPointHtml = '<div class="key-points">';
-                if (typeof chat.key_point === 'object') {
-                    keyPointHtml += '<h5>Key Points:</h5><ul>';
-                    for (const [key, value] of Object.entries(chat.key_point)) {
-                        keyPointHtml += `<li><strong>${key.replace('_', ' ')}:</strong> ${value}</li>`;
-                    }
-                    keyPointHtml += '</ul>';
-                } else {
-                    keyPointHtml += `<h5>Key Point:</h5><p>${chat.key_point}</p>`;
-                }
-                keyPointHtml += '</div>';
-            }
-            
             chatItem.innerHTML = `
                 <div class="chat-header">
                     <span class="chat-role">${chat.role.toUpperCase()}</span>
@@ -307,7 +294,6 @@ class WeaveDataViewer {
                 </div>
                 <div class="chat-content">
                     ${contentHtml}
-                    ${keyPointHtml}
                 </div>
             `;
             
