@@ -379,12 +379,15 @@
     <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
     <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="static/css/data-viewer.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
     <script defer src="static/js/fontawesome.all.min.js"></script>
     <script src="static/js/bulma-carousel.min.js"></script>
     <script src="static/js/index.js"></script>
+    <script src="static/js/data-viewer.js"></script>
+
     <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     <script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/4.1.1/gradio.js"></script>
 </head>
@@ -921,8 +924,28 @@
         <div class="hero-body">
             <div class="container is-max-desktop">
                 <h2 class="title is-3">Dataset Details</h2>
-                <h3 class="title is-4">Data Visualization</h3>
-
+                <section class="hero is-small data-visualization-section" id="data-visualization">
+                    <div class="hero-body">
+                        <div class="data-viewer-container">
+                            <h2 class="title is-4">Data Visualization</h2>
+                            <p class="content has-text-centered">
+                                Explore samples from our <span class="weave-title"><span class="w-part">W</span><span class="e-part">E</span><span class="a-part">A</span><span class="v-part">V</span><span class="e-part">E</span></span> dataset by selecting a domain below.
+                            </p>
+                            
+                            <div id="weave-domain-buttons">
+                                <!-- Domain buttons will be dynamically inserted here by JavaScript -->
+                            </div>
+                            
+                            <div id="weave-data-sample">
+                                <!-- Sample data will be displayed here -->
+                                <div class="has-text-centered" style="padding: 3rem 0;">
+                                    <p>Select a domain to view a sample from the WEAVE dataset.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
                 <h3 class="title is-4">Data Collection</h3>
                 <div class="method-figure">
                     <img loading="lazy" src="static/images/pipe.png" alt="Data Annotation Pipeline" />

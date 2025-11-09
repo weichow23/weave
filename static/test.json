@@ -1,0 +1,6107 @@
+[
+  {
+    "domain": "chess_game",
+    "images": [
+      "imgs/chess_2196_0.jpg",
+      "imgs/chess_2196_1.jpg",
+      "imgs/chess_2196_2.jpg",
+      "imgs/chess_2196_3.jpg",
+      "imgs/chess_2196_4.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Edit Image #1 by moving White's knight to e2."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #1": "Compared to <image>, White's knight moves to e2 (The piece has moved to a new position, and the original piece has been removed.)."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Edit Image #1 by advancing White's e-pawn to e4."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "GT #1": "Compared to <image>, White's e-pawn moves to e4 (The piece has moved to a new position, and the original piece has been removed.)."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Edit Image #1 by retreating White's knight to b1."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "GT #1": "Compared to <image>, White's knight moves to b1 (The piece has moved to a new position, and the original piece has been removed.)."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Edit Image #1 by moving White's knight to d3."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #5",
+        "key_point": {
+          "GT #1": "Compared to <image>, White's knight moves to d3 (The piece has moved to a new position, and the original piece has been removed.)."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Compare Image #2, Image #3, Image #4, and Image #5. Which edited position shows the best move for White, and why is it superior to the other options? Consider tactical opportunities, material advantage, and piece positioning in your analysis."
+      },
+      {
+        "role": "assistant",
+        "type": "text",
+        "content": "Among the four edited positions, Image #5 shows the best move. Moving the knight to d3 is the most active and beneficial choice because it improves the knight's position, supports the strong knight on e5, and increases White's central control. This move enhances White's influence in the center and prepares for potential kingside or central attacks.",
+        "key_point": null
+      }
+    ],
+    "idx": 0
+  },
+  {
+    "domain": "chess_game",
+    "images": [
+      "imgs/chess_2197_0.jpg",
+      "imgs/chess_2197_1.jpg",
+      "imgs/chess_2197_2.jpg",
+      "imgs/chess_2197_3.jpg",
+      "imgs/chess_2197_4.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Edit Image #1 by advancing White's d-pawn to d4."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #1": "Compared to <image>, White's d-pawn moves to d4 (The piece has moved to a new position, and the original piece has been removed.)."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Edit Image #1 by advancing White's g-pawn to g4."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "GT #1": "Compared to <image>, White's g-pawn moves to g4 (The piece has moved to a new position, and the original piece has been removed.)."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Edit Image #1 by moving White's bishop to e7."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "GT #1": "Compared to <image>, White's bishop moves to e7 (The piece has moved to a new position, and the original piece has been removed.)."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Edit Image #1 by moving White's queen to b7."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #5",
+        "key_point": {
+          "GT #1": "Compared to <image>, White's queen moves to b7 (The piece has moved to a new position, and the original piece has been removed.)."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Compare Image #2, Image #3, Image #4, and Image #5. Which edited position shows the best move for White, and why is it superior to the other options? Consider tactical opportunities, material advantage, and piece positioning in your analysis."
+      },
+      {
+        "role": "assistant",
+        "type": "text",
+        "content": "Among the four edited positions, Image #2 shows the best move. Advancing the d-pawn to d4 is the strongest move because it utilizes White's central pawn mass to increase pressure on Black's exposed king on d1. This move also opens lines for White's queen and knight, enhancing the attack. The other moves fail to contribute effectively to the attack or weaken White's position.",
+        "key_point": null
+      }
+    ],
+    "idx": 1
+  },
+  {
+    "domain": "chess_game",
+    "images": [
+      "imgs/chess_2198_0.jpg",
+      "imgs/chess_2198_1.jpg",
+      "imgs/chess_2198_2.jpg",
+      "imgs/chess_2198_3.jpg",
+      "imgs/chess_2198_4.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Edit Image #1 by having White's bishop capture Black's pawn on e6."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #1": "Compared to <image>, Black's pawn on e6 is replaced by White's bishop (The piece has moved to a new position, and the original piece has been removed.)."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Edit Image #1 by retreating White's bishop to e2."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "GT #1": "Compared to <image>, White's bishop moves to e2 (The piece has moved to a new position, and the original piece has been removed.)."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Edit Image #1 by advancing White's c-pawn to c4."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "GT #1": "Compared to <image>, White's c-pawn moves to c4 (The piece has moved to a new position, and the original piece has been removed.)."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Edit Image #1 by advancing White's b-pawn to b4, attacking Black's bishop on c5."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #5",
+        "key_point": {
+          "GT #1": "Compared to <image>, White's b-pawn moves to b4 (The piece has moved to a new position, and the original piece has been removed.)."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Compare Image #2, Image #3, Image #4, and Image #5. Which edited position shows the best move for White, and why is it superior to the other options? Consider tactical opportunities, material advantage, and piece positioning in your analysis."
+      },
+      {
+        "role": "assistant",
+        "type": "text",
+        "content": "Among the four edited positions, Image #5 shows the best move. Advancing the b-pawn to b4 is the most promising move because it attacks Black's bishop on c5, forcing it to move or be defended. This active move gains space on the queenside, disrupts Black's coordination, and creates immediate problems for Black, improving White's position significantly.",
+        "key_point": null
+      }
+    ],
+    "idx": 2
+  },
+  {
+    "domain": "chess_game",
+    "images": [
+      "imgs/chess_2199_0.jpg",
+      "imgs/chess_2199_1.jpg",
+      "imgs/chess_2199_2.jpg",
+      "imgs/chess_2199_3.jpg",
+      "imgs/chess_2199_4.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Edit Image #1 by having Black's rook capture the pawn on d7."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #1": "Compared to <image>, Black's rook moves to d7 (The piece has moved to a new position, and the original piece has been removed.)."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Edit Image #1 by moving Black's queen to c7."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "GT #1": "Compared to <image>, Black's queen moves to c7 (The piece has moved to a new position, and the original piece has been removed.)."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Edit Image #1 by advancing Black's a-pawn to a6."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "GT #1": "Compared to <image>, Black's a-pawn moves to a6 (The piece has moved to a new position, and the original piece has been removed.)."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Edit Image #1 by moving Black's queen to a8."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #5",
+        "key_point": {
+          "GT #1": "Compared to <image>, Black's queen moves to a8 (The piece has moved to a new position, and the original piece has been removed.)."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Compare Image #2, Image #3, Image #4, and Image #5. Which edited position shows the best move for White, and why is it superior to the other options? Consider tactical opportunities, material advantage, and piece positioning in your analysis."
+      },
+      {
+        "role": "assistant",
+        "type": "text",
+        "content": "Among the four edited positions, Image #3 shows the best move. Moving the queen to c7 is the most active and promising option for Black. This move improves Black's piece coordination and prepares potential threats against the white king or central squares, offering counterplay and increasing Black's chances in the position.",
+        "key_point": null
+      }
+    ],
+    "idx": 3
+  },
+  {
+    "domain": "visual_jigsaw",
+    "images": [
+      "imgs/jigsaw_0_0.jpg",
+      "imgs/jigsaw_0_1.jpg",
+      "imgs/jigsaw_0_2.jpg",
+      "imgs/jigsaw_0_3.jpg",
+      "imgs/jigsaw_0_4.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Use the image in Option A. to fill in the missing parts of Image #1."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #2": "Exactly the same as <image>"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Use the image in Option B. to fill in the missing parts of Image #1."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "GT #3": "Exactly the same as <image>"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Use the image in Option C. to fill in the missing parts of Image #1."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "GT #4": "Exactly the same as <image>"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Use the image in Option D. to fill in the missing parts of Image #1."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #5",
+        "key_point": {
+          "GT #5": "Exactly the same as <image>"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Which option in Image #1 fits to complete the puzzle? Answer in A B C or D"
+      },
+      {
+        "role": "assistant",
+        "type": "text",
+        "content": "A",
+        "key_point": null
+      }
+    ],
+    "idx": 4
+  },
+  {
+    "domain": "visual_jigsaw",
+    "images": [
+      "imgs/jigsaw_1_0.jpg",
+      "imgs/jigsaw_1_1.jpg",
+      "imgs/jigsaw_1_2.jpg",
+      "imgs/jigsaw_1_3.jpg",
+      "imgs/jigsaw_1_4.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Use the image in Option A. to fill in the missing parts of Image #1."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #2": "Exactly the same as <image>"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Use the image in Option B. to fill in the missing parts of Image #1."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "GT #3": "Exactly the same as <image>"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Use the image in Option C. to fill in the missing parts of Image #1."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "GT #4": "Exactly the same as <image>"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Use the image in Option D. to fill in the missing parts of Image #1."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #5",
+        "key_point": {
+          "GT #5": "Exactly the same as <image>"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Pick the right option from Image #1 that completes the image puzzle. Answer in A B C or D"
+      },
+      {
+        "role": "assistant",
+        "type": "text",
+        "content": "B",
+        "key_point": null
+      }
+    ],
+    "idx": 5
+  },
+  {
+    "domain": "visual_jigsaw",
+    "images": [
+      "imgs/jigsaw_2_0.jpg",
+      "imgs/jigsaw_2_1.jpg",
+      "imgs/jigsaw_2_2.jpg",
+      "imgs/jigsaw_2_3.jpg",
+      "imgs/jigsaw_2_4.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Use the image in Option A. to fill in the missing parts of Image #1."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #2": "Exactly the same as <image>"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Use the image in Option B. to fill in the missing parts of Image #1."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "GT #3": "Exactly the same as <image>"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Use the image in Option C. to fill in the missing parts of Image #1."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "GT #4": "Exactly the same as <image>"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Use the image in Option D. to fill in the missing parts of Image #1."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #5",
+        "key_point": {
+          "GT #5": "Exactly the same as <image>"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Which option in Image #1 fits to complete the puzzle? Answer in A B C or D"
+      },
+      {
+        "role": "assistant",
+        "type": "text",
+        "content": "D",
+        "key_point": null
+      }
+    ],
+    "idx": 6
+  },
+  {
+    "domain": "visual_jigsaw",
+    "images": [
+      "imgs/jigsaw_3_0.jpg",
+      "imgs/jigsaw_3_1.jpg",
+      "imgs/jigsaw_3_2.jpg",
+      "imgs/jigsaw_3_3.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Use the image in Option A. to fill in the missing parts of Image #1."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #2": "Exactly the same as <image>"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Use the image in Option B. to fill in the missing parts of Image #1."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "GT #3": "Exactly the same as <image>"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Use the image in Option C. to fill in the missing parts of Image #1."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "GT #4": "Exactly the same as <image>"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Specify the option in Image #1 that appropriately completes the image puzzle. Answer in A B C"
+      },
+      {
+        "role": "assistant",
+        "type": "text",
+        "content": "C",
+        "key_point": null
+      }
+    ],
+    "idx": 7
+  },
+  {
+    "domain": "visual_jigsaw",
+    "images": [
+      "imgs/jigsaw_4_0.jpg",
+      "imgs/jigsaw_4_1.jpg",
+      "imgs/jigsaw_4_2.jpg",
+      "imgs/jigsaw_4_3.jpg",
+      "imgs/jigsaw_4_4.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Use the image in Option A. to fill in the missing parts of Image #1."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #2": "Exactly the same as <image>"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Use the image in Option B. to fill in the missing parts of Image #1."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "GT #3": "Exactly the same as <image>"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Use the image in Option C. to fill in the missing parts of Image #1."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "GT #4": "Exactly the same as <image>"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Use the image in Option D. to fill in the missing parts of Image #1."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #5",
+        "key_point": {
+          "GT #5": "Exactly the same as <image>"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Which is the right option from Image #1 to complete the puzzle? Answer in A B C or D"
+      },
+      {
+        "role": "assistant",
+        "type": "text",
+        "content": "A",
+        "key_point": null
+      }
+    ],
+    "idx": 8
+  },
+  {
+    "domain": "geography",
+    "images": [
+      "imgs/geography_2_1.png",
+      "imgs/geography_2_2.jpeg",
+      "imgs/geography_2_3.png",
+      "imgs/geography_2_4.jpeg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Draw a landscape according to the contour lines map in Image #1"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #1": "Draw a landscape according to the contour lines map in <image>"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Add a castle at the highest point of your drawing in Image #2"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "Image #2": "Add a castle at the highest point of your drawing in <image>"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Edit the terrain map in Image #1 after adding the castle "
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "GT #1": "Compared to <image>, there is an additional castle.",
+          "Image #3": "The castle's position on the hill should match that in the <image>."
+        }
+      }
+    ],
+    "idx": 9
+  },
+  {
+    "domain": "edit",
+    "images": [
+      "imgs/edit_6_1.jpg",
+      "imgs/edit_6_2.png",
+      "imgs/edit_6_3.png",
+      "imgs/edit_6_4.png",
+      "imgs/edit_6_5.png"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Tell me what's weird here compared to a normal living room in Image #1."
+      },
+      {
+        "role": "assistant",
+        "type": "text",
+        "content": "bear",
+        "key_point": null
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Remove the strange object you think in the previous question in Image #1."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #1": "Remove the bear from <image>"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Place a small doll on the green sofa, similar to the bear removed in your previous question Image #2."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "Image #2": "Put a white bear doll on the green sofa in <image>"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Remove all visible greenery for Image #3."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "Image #3": "Remove all visible greenery for <image>"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "What will be image be when it becomes night? for Image #4."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #5",
+        "key_point": {
+          "Image #4": "Make it night for <image>"
+        }
+      }
+    ],
+    "idx": 10
+  },
+  {
+    "domain": "edit",
+    "images": [
+      "imgs/edit_4_0.png",
+      "imgs/edit_4_2.png",
+      "imgs/edit_4_1.png",
+      "imgs/edit_4_3.png",
+      "imgs/edit_4_4.png"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "What is the name of the most famous mountain in the country of the person in Image #1?"
+      },
+      {
+        "role": "assistant",
+        "type": "text",
+        "content": "Mount Fuji",
+        "key_point": null
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Please change the background of Image #1 to this mountain."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "Text": "A image of Mount Fuji"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Remove the character from Image #2"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "Image #2": "Remove the character from <image>"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Generate the most famous tower in the women's country's capital shown in Image #1."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "Text": "A image of Tokyo Tower"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Place the woman in Image #1 in front of the tower of Image #4"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #5",
+        "key_point": {
+          "Image #4": "Background looks like <image>",
+          "GT #1": "The woman looks like <image>"
+        }
+      }
+    ],
+    "idx": 11
+  },
+  {
+    "domain": "spatial",
+    "images": [
+      "imgs/spatial_5_1.png",
+      "imgs/spatial_5_2.png",
+      "imgs/spatial_5_3.png",
+      "imgs/spatial_5_4.png",
+      "imgs/spatial_5_5.png"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "What happens if you place trees arranged like in the picture on a snowy mountain in Image #1?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #2": "Same as <image>: 1. snowy 2. trees on the moutain 3. The shape of the mountain is the same as the image."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Please draw a top view of the picture shown, making sure the center of the circle is in the center of the Image #2"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "Image #2": "a top view of the <image>"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Draw a fisheye image of the picture shown in this Image #3"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "Image #3": "fisheye image of the <image>"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "What will the Image #4 be after 6 months when the temperature is above 10 degrees?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #5",
+        "key_point": {
+          "Image #2": "The <image> shows a spring scene; there is no snow, but the trees are still there."
+        }
+      }
+    ],
+    "idx": 12
+  },
+  {
+    "domain": "geography",
+    "images": [
+      "imgs/geography_11_1.jpeg",
+      "imgs/geography_11_2.jpeg",
+      "imgs/geography_11_3.jpg",
+      "imgs/geography_11_4.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Draw the real world view from the red circle in the direction of the arrow in Image #1"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #2": "Similar to <image>, the left side is a lake, and the right side is a mountain."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Remove the lake from Image #2"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "Image #2": "The lake in the <image> has been removed, but the river and mountains have been preserved."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "After the last round of removals, here's what it looks like from Image #1's perspective:"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "GT #1": "Similar to <image>, but the lake has been removed, and it's now a contour map."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "What are the differences between Image #4 and Image #1?"
+      },
+      {
+        "role": "assistant",
+        "type": "text",
+        "content": "Image #4 does not contain the lake found in Image #1.",
+        "key_point": null
+      }
+    ],
+    "idx": 13
+  },
+  {
+    "domain": "geography",
+    "images": [
+      "imgs/geography_13_1.jpeg",
+      "imgs/geography_13_2.jpeg",
+      "imgs/geography_13_3.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "draw what I would see in the real world if I was standing at the red circle and looking in the direction of the arrow in Image #1?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #2": "Similar to <image>, the middle section shows a distant volcano, while the sides are mountains."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "In the direction of the arrow in the Image #1, you can see the content shown in the Image #2. What can you see if you look in the opposite direction?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "Image #2": "The style is the same as the <image>; however, the middle is an open area without a volcano."
+        }
+      }
+    ],
+    "idx": 14
+  },
+  {
+    "domain": "spatial",
+    "images": [
+      "imgs/spatial_14_1.jpeg",
+      "imgs/spatial_14_2.jpeg",
+      "imgs/spatial_14_3.jpg",
+      "imgs/spatial_14_4.jpeg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Show me what the red arrow would look like in Image #1. Notice the castle in the middle and the river near it."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #2": "And look at the <image>, and note that there are several forked rivers in the center, just like in the picture."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Change the castle in Image #2 to a volcano."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "Image #2": "The castle in the center of the <image> has turned into a volcano, but it is still surrounded by rivers."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "After the change from Image #2 to Image #3 occurs, how should Image #1 be modified?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "GT #1": "Similar to <image> but the castle in the middle should be transformed into a volcano."
+        }
+      }
+    ],
+    "idx": 15
+  },
+  {
+    "domain": "geography",
+    "images": [
+      "imgs/geography_15_1.png",
+      "imgs/geography_15_2.jpeg",
+      "imgs/geography_15_3.jpeg",
+      "imgs/geography_15_4.png"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "draw the ground level view of the red arrow in Image #1 in NewYork at dusk"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "Text": "1. Nearby is the ocean, no land. 2. In the distance, in the center, is the Statue of Liberty. 3. Dusk."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "What does it look like when you look in the opposite direction from the original position in Image #1?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "Image #2": "<image>\n1. Similar in style to image, it should be at dusk. 2. The bridge is on the right side of the image."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "To see the scene in Image #3, how should the arrow in Image #1 point?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "GT #4": "<image>\nThe direction of the arrows in the image is consistent, and the map also matches the image."
+        }
+      }
+    ],
+    "idx": 16
+  },
+  {
+    "domain": "geography",
+    "images": [
+      "imgs/geography_12_1.jpg",
+      "imgs/geography_12_2.jpg",
+      "imgs/geography_12_3.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Should the values on the lines closer to the bottom of the Image #1 be larger or smaller?"
+      },
+      {
+        "role": "assistant",
+        "type": "text",
+        "content": "larger",
+        "key_point": null
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Please generate the seabed scene based on this isobath in Image #1"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #1": "The underwater mountains resemble those in <image>; the underwater scene; isobaths no longer exist."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Add a submarine for Image #2"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "Image #2": "Add a submarine for <image>"
+        }
+      }
+    ],
+    "idx": 17
+  },
+  {
+    "domain": "spatial",
+    "images": [
+      "imgs/spatial_17_1.png",
+      "imgs/spatial_17_2.jpg",
+      "imgs/spatial_17_3.jpg",
+      "imgs/spatial_17_4.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Draw what this point can see when facing the road in Image #1"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #2": "Similar to <image>, it's a street with cars parked on both sides; pay particular attention to the yellow taxi on the left side of the street."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Remove all taxis from the image for Image #2."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "Image #2": "Remove all taxis from the image for <image>"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "After the change from Image #2 to Image #3 occurs, how should Image #1 be modified?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "GT #1": "Remove the yellow taxi circled in red in the <image>."
+        }
+      }
+    ],
+    "idx": 18
+  },
+  {
+    "domain": "recall",
+    "images": [
+      "imgs/x7O78xZryufuMBLZ_1.jpg",
+      "imgs/x7O78xZryufuMBLZ_2.jpg",
+      "imgs/x7O78xZryufuMBLZ_3.jpg",
+      "imgs/x7O78xZryufuMBLZ_4.jpg",
+      "imgs/x7O78xZryufuMBLZ_5.jpg",
+      "imgs/x7O78xZryufuMBLZ_6.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Edit the waterfall from Image #1 by changing the season from summer to autumn, keeping the mist and waterfall unchanged."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #1": "Edit the waterfall from <image> by changing the season from summer to autumn, keeping the mist and waterfall unchanged."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Make the pool in Image #2 turn blue-green."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "Image #2": "Make the pool in <image> turn blue-green."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Add a dramatic sunset sky background to Image #3, keeping the waterfall and autumn forest as they are."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "Image #3": "Add a dramatic sunset sky background to <image>, keeping the waterfall and autumn forest as they are."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Isolate the waterfall from Image #4, removing the surrounding forest and sunset background."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #5",
+        "key_point": {
+          "Image #4": "Isolate the waterfall from <image>, removing the surrounding forest and sunset background."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Add back the autumn forest background from Image #2 behind the isolated waterfall in Image #5, but do not include the sunset sky."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #6",
+        "key_point": {
+          "GT #6": "<image>\nJust like the style of the pictures, make sure the style and color of the maple leaves and waterfall are consistent."
+        }
+      }
+    ],
+    "idx": 19
+  },
+  {
+    "domain": "edit",
+    "images": [
+      "imgs/KxaBkTUR1zzZ6DOp_1.jpg",
+      "imgs/KxaBkTUR1zzZ6DOp_2.jpg",
+      "imgs/KxaBkTUR1zzZ6DOp_3.jpg",
+      "imgs/KxaBkTUR1zzZ6DOp_4.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Add a single white orchid to the arrangement from Image #1, keeping everything else unchanged."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #1": "Add a single white orchid to the arrangement from <image>, keeping everything else unchanged."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Edit the primroses from Image #2 by changing their color to light purple, while keeping all other elements as they are."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "Image #2": "Edit the primroses from <image> by changing their color to light purple, while keeping all other elements as they are."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Add a small silver label with the word 'Welcome' to the base of the centerpiece from Image #3."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "Image #3": "Add a small silver label with the word 'Welcome' to the base of the centerpiece from <image>"
+        }
+      }
+    ],
+    "idx": 20
+  },
+  {
+    "domain": "recall",
+    "images": [
+      "imgs/NjXrLIXk81rwWNe2_1.jpg",
+      "imgs/NjXrLIXk81rwWNe2_2.jpg",
+      "imgs/NjXrLIXk81rwWNe2_3.jpg",
+      "imgs/NjXrLIXk81rwWNe2_4.jpg",
+      "imgs/NjXrLIXk81rwWNe2_5.jpg",
+      "imgs/NjXrLIXk81rwWNe2_6.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Show the same clutch bag as in Image #1, but from a side angle with all other details remaining the same."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #1": "The same clutch bag as in <image>, but from a side angle with all other details remaining the same."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Edit the clutch bag from Image #2 by changing its color to emerald green, and place it symmetrically, keeping the side angle and desk unchanged."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "Image #2": "Edit the clutch bag from <image> by changing its color to emerald green, and place it symmetrically, keeping the side angle and desk unchanged."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Isolate the clutch bag from Image #3 and resize to see the details on it so that the wooden desk and background are completely removed."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "GT #4": "<image>As shown in the picture, this is a detailed display of a handbag, without a background, and the handbag is green."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Rotate the clutch bag from Image #3 slightly so it's facing the frame, and remove the yellow background but keep the table."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #5",
+        "key_point": {
+          "GT #5": "<image>Just like in the picture, a green handbag is facing the frame, there's a table but no background."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Merge the smaller clutch bag from Image #5 with the original background from Image #1, so the resized bag is placed on the same desk."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #6",
+        "key_point": {
+          "Image #5": "A light yellow background was added to the <image>."
+        }
+      }
+    ],
+    "idx": 21
+  },
+  {
+    "domain": "edit",
+    "images": [
+      "imgs/uHEQnXypeDLXvU4B_1.jpg",
+      "imgs/uHEQnXypeDLXvU4B_2.jpg",
+      "imgs/uHEQnXypeDLXvU4B_3.jpg",
+      "imgs/uHEQnXypeDLXvU4B_4.jpg",
+      "imgs/uHEQnXypeDLXvU4B_5.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Resize the perfume bottle from Image #1 to make it appear slightly taller, while keeping the rest of the image unchanged."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #1": "Resize the perfume bottle from <image> to make it appear slightly taller, while keeping the rest of the image unchanged."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Isolate the perfume bottle from Image #2 by removing any reflections and the glass surface, placing the bottle on a plain white background."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "Image #2": "<image>Isolate the perfume bottle from image by removing any reflections and the glass surface, placing the bottle on a plain white background."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Replace the perfume bottle from Image #3 with a clear glass vase in the same location and keep everything else the same."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "Image #3": "<image>Replace the perfume bottle from image with a clear glass vase in the same location and keep everything else the same."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Split the glass vase from Image #4 into two identical vases, positioned side by side with equal spacing."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #5",
+        "key_point": {
+          "Image #4": "<image>Split the glass vase from image into two identical vases, positioned side by side with equal spacing."
+        }
+      }
+    ],
+    "idx": 22
+  },
+  {
+    "domain": "recall",
+    "images": [
+      "imgs/84JunKMNbpG5IAjK_1.jpg",
+      "imgs/84JunKMNbpG5IAjK_2.jpg",
+      "imgs/84JunKMNbpG5IAjK_3.jpg",
+      "imgs/84JunKMNbpG5IAjK_4.jpg",
+      "imgs/84JunKMNbpG5IAjK_5.jpg",
+      "imgs/84JunKMNbpG5IAjK_6.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Remove the cup of coffee from Image #1."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #1": "Remove the cup of coffee from <image>"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Add some daylight streaming in from the side to Image #2."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "Image #2": "Add some daylight streaming in from the side to <image>."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Add an empty cup in Image #3."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "Image #3": "Add an empty cup in <image>"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Replace the empty cup in Image #4 with the cup of coffee that was removed when editing from Image #1 to Image #2."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #5",
+        "key_point": {
+          "GT #1": "Similar to <image>, pay special attention to whether the shape of the cups is exactly the same and whether there is coffee in the cups."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Replace the pen from Image #5 with a mechanical pencil."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #6",
+        "key_point": {
+          "Image #5": "Replace the pen from <image> with a mechanical pencil."
+        }
+      }
+    ],
+    "idx": 23
+  },
+  {
+    "domain": "recall",
+    "images": [
+      "imgs/cdKeHm2uU7ady8be_1.jpg",
+      "imgs/cdKeHm2uU7ady8be_2.jpg",
+      "imgs/cdKeHm2uU7ady8be_3.jpg",
+      "imgs/cdKeHm2uU7ady8be_5.jpg",
+      "imgs/cdKeHm2uU7ady8be_6.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Isolate the woman from Image #1 so only she is visible with her hair longer, without the marketplace background."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #2": "The image must be completely identical to the one in the <image>. Pay special attention to the woman's movements, the object in her hand, and her clothing, and make sure there is no background."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Add a night market background to the people in Image #2."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "Image #2": "Add a night market background to the people in <image>."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Replace the woman from Image #3 with a man, maintaining the early evening lighting and the larger basket."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "Image #3": "Replace the woman from <image> with a man, maintaining everthing else unchanged."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Merge the man from Image #4 with the original marketplace background from Image #1, keeping his pose and basket."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #5",
+        "key_point": {
+          "GT #1": "Same as the background in <image>",
+          "Image #4": "The man looks just like the man in <image>."
+        }
+      }
+    ],
+    "idx": 24
+  },
+  {
+    "domain": "edit",
+    "images": [
+      "imgs/jNE5BZfmDpuczlSy_1.jpg",
+      "imgs/jNE5BZfmDpuczlSy_2.jpg",
+      "imgs/jNE5BZfmDpuczlSy_3.jpg",
+      "imgs/jNE5BZfmDpuczlSy_4.jpg",
+      "imgs/jNE5BZfmDpuczlSy_5.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Edit the person from Image #1 by changing the time of day to evening while keeping everything else the same."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #1": "Edit the person from <image> by changing the time of day to evening while keeping everything else the same."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Duplicate the woman from Image #2 while keeping the new woman's feet hidden, so that two identical women are walking side by side on the same runway."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "Image #2": "Duplicate the woman from <image> while keeping the new woman's feet hidden, so that two identical women are walking side by side on the same runway."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Edit the two women from Image #3 by changing the season to autumn, so the runway has autumn-themed decor."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "Image #3": "Edit the two women from <image> by changing the season to autumn, so the runway has autumn-themed decor."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Split the rightmost woman from Image #4 into two individuals, so now there are three women on the runway and the other elements remain unchanged."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #5",
+        "key_point": {
+          "Image #4": "Split the rightmost woman from <image> into two individuals, so now there are three women on the runway and the other elements remain unchanged."
+        }
+      }
+    ],
+    "idx": 25
+  },
+  {
+    "domain": "recall",
+    "images": [
+      "imgs/3b0XGHrPB7VTzjya_1.jpg",
+      "imgs/3b0XGHrPB7VTzjya_2.jpg",
+      "imgs/3b0XGHrPB7VTzjya_3.jpg",
+      "imgs/3b0XGHrPB7VTzjya_4.jpg",
+      "imgs/3b0XGHrPB7VTzjya_5.jpg",
+      "imgs/3b0XGHrPB7VTzjya_6.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Edit the runner from Image #1 by letting him run towards the window."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #2": "It must be exactly the same as <image>, especially the direction the person is facing."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Change the image style into a cartoon for the person from Image #1, keeping the classroom scene the same."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "Image #2": "Change the image style into a cartoon for the person from <image>, keeping the classroom scene the same."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Remove the background from the person in Image #3, leaving only the cartoon runner."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "Image #3": "Remove the background from the person in <image>, leaving only the cartoon runner."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Add a chalkboard as a new background behind the cartoon runner from Image #4."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #5",
+        "key_point": {
+          "Image #4": "Add a chalkboard as a new background behind the cartoon runner from <image>."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Merge the cartoon runner from Image #4 with the cartoonized background from Image #1."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #6",
+        "key_point": {
+          "GT #1": "cartoonized background likes <image>",
+          "Image #4": "the cartoon runner likes <image>"
+        }
+      }
+    ],
+    "idx": 26
+  },
+  {
+    "domain": "recall",
+    "images": [
+      "imgs/KeHB2DlRT1BHzVTT_1.jpg",
+      "imgs/KeHB2DlRT1BHzVTT_3.jpg",
+      "imgs/KeHB2DlRT1BHzVTT_4.jpg",
+      "imgs/KeHB2DlRT1BHzVTT_5.jpg",
+      "imgs/KeHB2DlRT1BHzVTT_6.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Change the background in Image #1 to a plain black studio backdrop and remove the light."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #1": "Change the background in <image> to a plain black studio backdrop and remove the light."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Edit the person from Image #2 by replacing her shoes with white sneakers and add back the light from Image #1."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "GT #1": "There is a lamp in the upper left corner that is the same as the one in the <image>, but it is in the dark.",
+          "Image #2": "The person in <image> is exactly the same, except they've changed to white sneakers."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Change the image style in Image #3 into glitch art."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "Image #3": "Change the image style in <image> into glitch art."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Merge the glitch art style walking person from Image #4 with the original studio background from Image #1."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #5",
+        "key_point": {
+          "GT #1": "Except for the people, everything else is the same as in <image>.",
+          "Image #4": "The person's style is the same as in the <image>."
+        }
+      }
+    ],
+    "idx": 27
+  },
+  {
+    "domain": "recall",
+    "images": [
+      "imgs/rlMToj2FSrZ68auE_1.jpg",
+      "imgs/rlMToj2FSrZ68auE_2.jpg",
+      "imgs/rlMToj2FSrZ68auE_3.jpg",
+      "imgs/rlMToj2FSrZ68auE_4.jpg",
+      "imgs/rlMToj2FSrZ68auE_5.jpg",
+      "imgs/rlMToj2FSrZ68auE_6.jpg",
+      "imgs/rlMToj2FSrZ68auE_7.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Change the background in Image #1 to show the bedroom window with a gentle snowfall outside."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #1": "Change the background in <image> to show the bedroom window with a gentle snowfall outside."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Add some decorative string lights on the headboard behind the group in Image #2."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "Image #2": "Add some decorative string lights on the headboard behind the group in <image>."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Edit the Image #3 by swapping the position of the girl and the boy in black clothes and making the boy in black clothes wear glasses."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "Image #3": "Edit the <image> by swapping the position of the girl and the boy in black clothes and making the boy in black clothes wear glasses."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Change the season in the outside view of the window in Image #4 from winter to spring, with trees starting to blossom."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #5",
+        "key_point": {
+          "Image #4": "Change the season in the outside view of the window in <image> from winter to spring, with trees starting to blossom."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Add a cozy cat curled up on the bed beside the group in Image #5."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #6",
+        "key_point": {
+          "Image #5": "Add a cozy cat curled up on the bed beside the group in <image>."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Replace the people group and background in Image #6 with the people group and background in Image #2."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #7",
+        "key_point": {
+          "Image #6": "1. The headboard trim is the same as in 2. The cat and <image>.",
+          "Image #2": "The placement of the three figures is exactly the same as in <image>."
+        }
+      }
+    ],
+    "idx": 28
+  },
+  {
+    "domain": "edit",
+    "images": [
+      "imgs/kMzzDZd6Emc86Gh0_1.jpg",
+      "imgs/kMzzDZd6Emc86Gh0_2.jpg",
+      "imgs/kMzzDZd6Emc86Gh0_3.jpg",
+      "imgs/kMzzDZd6Emc86Gh0_4.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Remove the background from the person in Image #1, and show only the upper body."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #1": "Remove the background from the person in <image>, and show only the upper body."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Change the time of day for the person from Image #2 to dusk, everything else stays the same."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "Image #2": "Change the time of day for the person from <image> to dusk, everything else stays the same."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Swap the front and back of the hiker's feet in Image #1."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "Image #3": "Swap the front and back of the hiker's feet in <image>."
+        }
+      }
+    ],
+    "idx": 29
+  },
+  {
+    "domain": "recall",
+    "images": [
+      "imgs/QhBUUhCu35d3yT6Z_1.jpg",
+      "imgs/QhBUUhCu35d3yT6Z_2.jpg",
+      "imgs/QhBUUhCu35d3yT6Z_3.jpg",
+      "imgs/QhBUUhCu35d3yT6Z_4.jpg",
+      "imgs/QhBUUhCu35d3yT6Z_5.jpg",
+      "imgs/QhBUUhCu35d3yT6Z_6.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Edit the vehicle from Image #1 by adding a mountain bike onto its roof rack."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #1": "Edit the vehicle from <image> by adding a mountain bike onto its roof rack."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Edit the lighting in Image #2 to look like early morning sunlight."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "Image #2": "Edit the lighting in <image> to look like early morning sunlight."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Change only the season in Image #3 to winter, with some snow visible around the SUV."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "Image #3": "Change only the season in <image> to winter, with some snow visible around the SUV."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Duplicate the SUV from Image #4 so that there are two identical crossover SUVs parked side by side."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #5",
+        "key_point": {
+          "Image #4": "Duplicate the SUV from <image> so that there are two identical crossover SUVs parked side by side."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Replace the ground in Image #5 with the ground in Image #2."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #6",
+        "key_point": {
+          "GT #1": "The ground pattern is consistent with the <image>",
+          "Image #5": "The car's style is the same as in <image>."
+        }
+      }
+    ],
+    "idx": 30
+  },
+  {
+    "domain": "recall",
+    "images": [
+      "imgs/L5gMCbUODvbZZWmQ_0.jpg",
+      "imgs/L5gMCbUODvbZZWmQ_1.jpg",
+      "imgs/L5gMCbUODvbZZWmQ_2.jpg",
+      "imgs/L5gMCbUODvbZZWmQ_3.jpg",
+      "imgs/L5gMCbUODvbZZWmQ_4.jpg",
+      "imgs/L5gMCbUODvbZZWmQ_5.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Remove the belt on the man for Image #1."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #1": "Remove the belt on the man for <image>."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Remove the background from Image #2 to isolate the model and peacoat."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "Image #2": "Remove the background from <image> to isolate the model and peacoat."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Add a subtle designer logo on the left sleeve of the peacoat from Image #3."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "Image #3": "Add a subtle designer logo on the left sleeve of the peacoat from <image>."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Change the time of day in the fitting room scene from Image #2 to evening, making the lighting warmer."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #5",
+        "key_point": {
+          "Image #4": "Change the time of day in the fitting room scene from <image> to evening, making the lighting warmer."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Put the same belt as the man in Image #1 on the man in Image #5."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #6",
+        "key_point": {
+          "Image #5": "Except for the belt the man wearing, it is exactly the same as the <image>.",
+          "GT #1": "The belt is exactly the same as the one in the <image>."
+        }
+      }
+    ],
+    "idx": 31
+  },
+  {
+    "domain": "recall",
+    "images": [
+      "imgs/xwFZlbCv03MxWP8Z_1.jpg",
+      "imgs/xwFZlbCv03MxWP8Z_2.jpg",
+      "imgs/xwFZlbCv03MxWP8Z_3.jpg",
+      "imgs/xwFZlbCv03MxWP8Z_4.jpg",
+      "imgs/xwFZlbCv03MxWP8Z_5.jpg",
+      "imgs/xwFZlbCv03MxWP8Z_6.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Edit the background of Image #1 to feature a bright, geometric abstract mural behind the runway."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #1": "Edit the background of <image> to feature a bright, geometric abstract mural behind the runway."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Make the bold necklace accessory on the model's waist thicker on Image #2 and wrap it around her waist 3 times. Also change the background to the background in Image #1, but with an inverted blue triangle pattern on the top wall."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "GT #1": "Same as the background in <image>",
+          "Image #2": "the bold necklace accessory on the model's waist is thicker than <image>"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Modify Image #3 so the model has her hands on her hips and the accessories on her waist are the same as in Image #2."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "Image #2": "the accessories on the woman's waist are the same as <image>",
+          "Image #3": "Modify <image> so the model has her hands on her hips"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Change the time of day of the runway in Image #4 to evening, adjusting the lighting accordingly and let the model's right hand hang naturally."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #5",
+        "key_point": {
+          "Image #4": "Change the time of day of the runway in <image> to evening, adjusting the lighting accordingly and let the model's right hand hang naturally."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Merge the geometric mural background and the model with her outfit from Image #2 with the evening lighting of Image #5."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #6",
+        "key_point": {
+          "Image #2": "the geometric mural background and the model with her outfit is same with <image>",
+          "Image #5": "The evening lighting effect is similar to <image>"
+        }
+      }
+    ],
+    "idx": 32
+  },
+  {
+    "domain": "edit",
+    "images": [
+      "imgs/6Vi1TzOdNqMnyyQG_1.jpg",
+      "imgs/6Vi1TzOdNqMnyyQG_2.jpg",
+      "imgs/6Vi1TzOdNqMnyyQG_3.jpg",
+      "imgs/6Vi1TzOdNqMnyyQG_4.jpg",
+      "imgs/6Vi1TzOdNqMnyyQG_5.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Remove the background from Image #1 so the model and the accessories stand out against a plain backdrop."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #1": "Remove the background from <image> so the model and the accessories stand out against a plain backdrop."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Add a subtle gold logo to the gloves from Image #2 to create a designer look."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "Image #2": "Add a subtle gold logo to the gloves from <image> to create a designer look."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Take off gloves of the woman on Image #3."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "Image #3": "Take off gloves of the woman on <image>, but keep the hand movements constant"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Move the model in Image #4 closer to the mirror and change the coat into a police uniform."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #5",
+        "key_point": {
+          "Image #4": "<image>The person is even smaller, showing their entire body, and is wearing a police uniform."
+        }
+      }
+    ],
+    "idx": 33
+  },
+  {
+    "domain": "maze",
+    "images": [
+      "imgs/maze_0_1.jpg",
+      "imgs/maze_0_2.png",
+      "imgs/maze_0_3.png"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Generate the solution path marked in red for the maze shown in Image #1 from the A to the E."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #1": "<image>have line from A to E is drawn in the diagram; it doesn't pass through walls but follows the maze."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "In the maze shown in Image #1, which point is not connected to all other points?"
+      },
+      {
+        "role": "assistant",
+        "type": "text",
+        "content": "E",
+        "key_point": null
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "In the maze of Image #1, between which two points that can be connected is the distance the farthest? You can see the red line in Image #2 for reference."
+      },
+      {
+        "role": "assistant",
+        "type": "text",
+        "content": "B and D",
+        "key_point": null
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "In the maze of Image #1, connect point C to the point closest to it with a red line."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "GT #1": "<image>have line from B to C is drawn in the diagram; it doesn't pass through walls but follows the maze."
+        }
+      }
+    ],
+    "idx": 34
+  },
+  {
+    "domain": "maze",
+    "images": [
+      "imgs/maze_1_1.jpg",
+      "imgs/maze_1_2.png",
+      "imgs/maze_1_3.png",
+      "imgs/maze_1_4.png"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Generate the solution path marked in red for the maze shown in Image #1 from the A to the C."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #1": "<image>have line from B to C is drawn in the diagram; it doesn't pass through walls but follows the maze."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Generate the solution path marked in red for the maze shown in Image #1 from the D to the E."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "GT #1": "<image>Have a line from D to E is drawn in the diagram; it doesn't pass through walls but follows the maze."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Compare the red lines in Image #2 and Image #3, and tell me which red line between the two points is longer."
+      },
+      {
+        "role": "assistant",
+        "type": "text",
+        "content": "D to E",
+        "key_point": null
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "In the maze of Image #1, draw the shortest route between the two closest points that are connected, using a red line."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "GT #1": "<image>Have a line from B to E is drawn in the diagram; it doesn't pass through walls but follows the maze."
+        }
+      }
+    ],
+    "idx": 35
+  },
+  {
+    "domain": "spatial",
+    "images": [
+      "imgs/spatial_9_1.png",
+      "imgs/spatial_9_2.png",
+      "imgs/spatial_9_3.png",
+      "imgs/spatial_9_4.png",
+      "imgs/spatial_9_5.png"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "What is the main view seen along the shoulder direction in Image #1?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #2": "Exactly the same as <image>"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Draw the lines of the perspective view of Image #1 with dashed lines."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "GT #3": "Exactly the same as <image>"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "What would happen if the gap in the lower right corner of Image #1 were filled?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "GT #4": "Exactly the same as <image>"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "After the changes from Image #1 to Image #4 occur, how should Image #2 change?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #5",
+        "key_point": {
+          "GT #5": "Exactly the same as <image>"
+        }
+      }
+    ],
+    "idx": 36
+  },
+  {
+    "domain": "spatial",
+    "images": [
+      "imgs/spatial_8_1.png",
+      "imgs/spatial_8_2.png",
+      "imgs/spatial_8_3.png",
+      "imgs/spatial_8_4.png",
+      "imgs/spatial_8_5.jpg",
+      "imgs/spatial_8_6.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Provide the front view of Image #1."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #1": "the front view of <image>",
+          "GT #2": "Some components of the capsule room are similar to <image>."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Provide the left view of Image #1."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "GT #1": "the left view of <image>",
+          "GT #3": "Some components of the capsule room are similar to <image>."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Provide the top view of Image #1."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "GT #1": "the top view of <image>",
+          "GT #4": "Some components of the capsule room are similar to <image>."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Remove the green plants in Image #1."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #5",
+        "key_point": {
+          "GT #1": "Remove the green plants in <image>"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "After the changes from Image #1 to Image #5 occur, how should Image #4 be adjusted?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #6",
+        "key_point": {
+          "GT #4": "Remove the green plants in <image>"
+        }
+      }
+    ],
+    "idx": 37
+  },
+  {
+    "domain": "physics",
+    "images": [
+      "imgs/physics_0_0.jpg",
+      "imgs/physics_0_1.jpg",
+      "imgs/physics_0_2.jpg",
+      "imgs/physics_0_3.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Transform the Image #1 into a realistic style."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #1": "Transform the <image> into a realistic style."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Remove the hand from the faucet on Image #2."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "Text": "realistic style",
+          "Image #2": "Remove the hand from the faucet on <image>."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Show what happens to this water stream when the water pressure is significantly increased in Image #1."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "GT #1": "<image>Pixel art style as the image but water flow becomes thicker"
+        }
+      }
+    ],
+    "idx": 38
+  },
+  {
+    "domain": "geography",
+    "images": [
+      "imgs/geography_7_0.png",
+      "imgs/geography_7_1.jpg",
+      "imgs/geography_7_2.jpg",
+      "imgs/geography_7_3.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Standing at the red dot in Image #1, what can we see along the red arrow?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #2": "Similar to the <image>, the Tower Bridge is in the very center."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Standing at the red dot in Image #1, if we turn 90 degrees left along the direction of the red arrow, what can we see?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "Image #2": "The overall weather style is similar to <image>.",
+          "GT #3": "Similar to the <image>, you can see the Tower of London"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "To see the scene shown in Image #4, how far do we need to walk along the arrow direction in Image #1 and then look back to see it?"
+      },
+      {
+        "role": "assistant",
+        "type": "text",
+        "content": "200 m (100m - 400m is considered correct)",
+        "key_point": null
+      }
+    ],
+    "idx": 39
+  },
+  {
+    "domain": "edit",
+    "images": [
+      "imgs/edit_2_1.jpg",
+      "imgs/edit_2_2.jpg",
+      "imgs/edit_2_3.jpg",
+      "imgs/edit_2_4.jpg",
+      "imgs/edit_2_5.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Change the hat to a flesh tone and remove the gemstone from the hat for Image #1."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #1": "Change the hat to a flesh tone and remove the gemstone from the hat for <image>."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Transform Image #2 realistic painting into a noble portrait from the Baroque period."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "Image #2": "Transform <image> realistic painting into a noble portrait from the Baroque period."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Convert this Baroque-era noble portrait in Image #3 into a Japanese ukiyo-e woodblock print from the Edo period, maintaining the same sitting posture and color scheme, but depicting the subject as a high-class Japanese woman wearing an elegant kimono, rendered in classic woodblock flat colors and stylized lines."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "Image #3": "Convert this Baroque-era noble portrait in <image> into a Japanese ukiyo-e woodblock print from the Edo period, maintaining the same sitting posture and color scheme, but depicting the subject as a high-class Japanese woman wearing an elegant kimono, rendered in classic woodblock flat colors and stylized lines."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Edit Image #4 by adding a gemstone from the hat in Image #1."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #5",
+        "key_point": {
+          "Image #4": "Edit <image> by adding a white gemstone (the color is important)"
+        }
+      }
+    ],
+    "idx": 40
+  },
+  {
+    "domain": "physics",
+    "images": [
+      "imgs/physics_2_1.jpg",
+      "imgs/physics_2_2.jpg",
+      "imgs/physics_2_3.jpeg",
+      "imgs/physics_2_4.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "What happens if you place a lemon under the water stream in Image #1?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #2": "<image>As shown in the picture, there is a lemon below the water flow, and the water flow is interrupted."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "What happens if you turn your palm upward and place it under the water stream in Image #1?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "GT #3": "<image>As shown in the picture, water hits the palm and changes direction to the side. Water splashes and spreads outward from the point of contact with the hand, with multiple streams of water deflected in different directions. The hand acts as a deflector, causing the water to disperse."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "What would happen to Image #3 if the water pressure increases?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "Image #3": "The water flow becomes thicker than in the <image>."
+        }
+      }
+    ],
+    "idx": 41
+  },
+  {
+    "domain": "chemistry",
+    "images": [
+      "imgs/chemistry_1_1.jpg",
+      "imgs/chemistry_1_2.jpg",
+      "imgs/chemistry_1_3.jpg",
+      "imgs/chemistry_1_4.jpg",
+      "imgs/chemistry_1_5.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "In the indigo carmine solution shown in Image #1, after adding glucose and sodium hydroxide solution, how will the color of the solution change?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #2": "The color in the container is similar to the color in the container in the <image>."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "After the color shown in Image #2 appears, if the container is sealed and shaken, how will the color of the solution change?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "GT #3": "The color in the container is similar to the color in the container in the <image>."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "After the color shown in Image #3 appears, if left to stand for 1 minute, how will the color of the solution change?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "GT #4": "The color in the container is similar to the color in the container in the <image>."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "What will happen if the conical flask in Image #4 is shaken again (draw how it looks when shaken)?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #5",
+        "key_point": {
+          "GT #5": "The color in the container is similar to the color in the container in the <image>."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "What fundamental reactions are responsible for the appearance of red color in Image #3 and yellow color in Image #4,  respectively? (Please answer in terms of redox reactions.)"
+      },
+      {
+        "role": "assistant",
+        "type": "text",
+        "content": "Turns red (oxidation), turns back to yellow (reduction).",
+        "key_point": null
+      }
+    ],
+    "idx": 42
+  },
+  {
+    "domain": "chemistry",
+    "images": [
+      "imgs/chemistry_2_1.jpg",
+      "imgs/chemistry_2_2.jpg",
+      "imgs/chemistry_2_3.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "What will happen to the bear coated with 2-(2,4-dinitrobenzyl) pyridine (DNBP) in Image #1 after being exposed to sunlight for one day?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #2": "Like the <image>, the bear is either blue or purple."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "If only the right side in Image #1 is exposed to the sun while the left side is covered with a light-blocking cloth, what effect will be observed?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "GT #3": "Similar to <image>, the right side changes to blue or purple; the left side remains a yellow bear."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Which type of light in sunlight causes this color-changing phenomenon as shown from Image #1 to Image #2?"
+      },
+      {
+        "role": "assistant",
+        "type": "text",
+        "content": "Ultraviolet light.",
+        "key_point": null
+      }
+    ],
+    "idx": 43
+  },
+  {
+    "domain": "chemistry",
+    "images": [
+      "imgs/chemistry_3_1.png",
+      "imgs/chemistry_3_2.jpg",
+      "imgs/chemistry_3_3.jpg",
+      "imgs/chemistry_3_4.jpg",
+      "imgs/chemistry_3_5.png"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "When a small amount of sucrose is added to the potassium permanganate solution (Mn⁷⁺) shown in Image #1, what is the first color that appears?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #2": "The color in the container is similar to the color in the container in the <image>."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "As the reaction continues in Image #2, what color will appear?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "GT #3": "The color in the container is similar to the color in the container in the <image>."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "What will the solution ultimately look like in Image #3?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "GT #4": "The color in the container is similar to the color in the container in the <image>."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Image #5 shows several color changes from the previous steps. The first color corresponds to (Mn⁷⁺). What chemical elements do the next three colors correspond to?"
+      },
+      {
+        "role": "assistant",
+        "type": "text",
+        "content": "Blue (Mn⁶⁺), Green (Mn⁵⁺), Brown (Mn⁴⁺).",
+        "key_point": null
+      }
+    ],
+    "idx": 44
+  },
+  {
+    "domain": "chemistry",
+    "images": [
+      "imgs/chemistry_4_1.jpg",
+      "imgs/chemistry_4_2.jpg",
+      "imgs/chemistry_4_3.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "The moment the mercury thiocyanate powder on the desktop is ignited, what will Image #1 look like?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #2": "Similar to <image> small yellow stuff emerging from white powder."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "What happens to Image #2 shortly after the combustion begins?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "GT #3": "Similar to <image> long yellow stuff emerging from white powder."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "What is the formation principle of the rapidly expanding 'snake'-like substance in Image #2?"
+      },
+      {
+        "role": "assistant",
+        "type": "text",
+        "content": "Mercury thiocyanate decomposes when heated.",
+        "key_point": null
+      }
+    ],
+    "idx": 45
+  },
+  {
+    "domain": "chemistry",
+    "images": [
+      "imgs/chemistry_5_1.png",
+      "imgs/chemistry_5_2.png"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "The round-bottom flask in Image #1 contains 30% hydrogen peroxide, dish soap, and food coloring. If no new reagents are added, will the liquid remain in its current state?"
+      },
+      {
+        "role": "assistant",
+        "type": "text",
+        "content": "Yes.",
+        "key_point": null
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "If potassium iodide solution is added, what will happen in Image #1? "
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #2": "like <image>, a large amount of foam will rapidly erupt, resembling toothpaste."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Is this reaction endothermic or exothermic for the reaction from Image #1 to Image #2?"
+      },
+      {
+        "role": "assistant",
+        "type": "text",
+        "content": "It is exothermic and accompanied by the production of steam.",
+        "key_point": null
+      }
+    ],
+    "idx": 46
+  },
+  {
+    "domain": "minecraft",
+    "images": [
+      "imgs/world_1_1.png",
+      "imgs/world_1_2.png",
+      "imgs/world_1_3.png",
+      "imgs/world_1_4.png",
+      "imgs/world_1_5.png"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "What would you see if you passed through the first door in Image #1?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #2": "The windmill and clock tower in the center like <image>"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "If you turn 45 degrees left from Image #2, what would you see? "
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "GT #3": "Can see the  windmill and clock tower like <image>"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "What would happen if it were nighttime in Image #3?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "Image #3": "Make <image> to night"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "What would you see after turning 270 degrees left from Image #4?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #5",
+        "key_point": {
+          "GT #5": "Similar to <image>, the clock tower would be on the right."
+        }
+      }
+    ],
+    "idx": 47
+  },
+  {
+    "domain": "minecraft",
+    "images": [
+      "imgs/world_2_1.png",
+      "imgs/world_2_2.png",
+      "imgs/world_2_3.png",
+      "imgs/world_2_4.png"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Based on Image #1, what is the view like when the clock tower ahead is no longer visible?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #1": "A zoomed-in crop after the clock tower is out of sight in <image>."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "What is seen when turning 45 degrees to the left in Image #2?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "GT #3": "As shown in the <image>, the gate is located near the center."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "What would it look like if we rise to a height of three towers and look downward in Image #3?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "GT #1": "Top view of the <image>"
+        }
+      }
+    ],
+    "idx": 48
+  },
+  {
+    "domain": "minecraft",
+    "images": [
+      "imgs/world_3_1.png",
+      "imgs/world_3_2.png",
+      "imgs/world_3_3.png"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "In Image #1, what might be seen when moving forward and approaching the mist?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #2": "There are cable cars or cable car supports similar to those shown in the <image>."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Based on Image #2, what might be visible after turning 180 degrees?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "GT #3": "You can see a spire similar to the church in the <image>."
+        }
+      }
+    ],
+    "idx": 49
+  },
+  {
+    "domain": "minecraft",
+    "images": [
+      "imgs/world_4_1.png",
+      "imgs/world_4_2.png",
+      "imgs/world_4_3.png",
+      "imgs/world_4_4.png"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Walk forward until the pavilion and the tree fill the frame in Image #1—what will you see?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #1": "A zoomed-in crop for <image>."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Based on Image #2, turn 60 degrees to the left—what will you see?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "GT #3": "As shown in the <image>, the pavilion is on the right."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Starting from Image #3, walk forward until the pavilion is no longer visible, then stop and turn 150 degrees to the right—what will you see?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "GT #4": "You can see  the pavilion like what in <image>"
+        }
+      }
+    ],
+    "idx": 50
+  },
+  {
+    "domain": "minecraft",
+    "images": [
+      "imgs/world_5_1.png",
+      "imgs/world_5_2.png",
+      "imgs/world_5_3.png"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Walk forward until the house and the cherry blossom tree fill the frame in Image #1—what will you see?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #1": "A zoomed-in crop for <image>."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Based on Image #1, if you stand at the second-floor window on the left side of the house and look directly outward, what might you see?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "GT #3": "You can see the cherry blossom tree and the small house as shown in th <image>."
+        }
+      }
+    ],
+    "idx": 51
+  },
+  {
+    "domain": "biology",
+    "images": [
+      "imgs/biology_0_1.jpg",
+      "imgs/biology_0_2.jpg",
+      "imgs/biology_0_3.jpg",
+      "imgs/biology_0_4.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Draw a cross-sectional diagram of the leaf of the plant shown in Image #1."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #2": "Cross-sectional diagram of a holly leaf, similar to <image>"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Predict what would happen to the leaf in Image #1 if it were not watered for two weeks under hot, direct sunlight."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "GT #3": "As shown in <image>, the leaf would appear wilted and drooping. The leaflets curl inward, with edges becoming dry and brittle."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "After the edits from the previous round, how would Image #2 change accordingly?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "Image #2": "Comparing <image>, the following changes occurred: The mesophyll cells undergo plasmolysis, with both palisade and spongy mesophyll cells significantly shrinking and detaching from the cell walls, leaving clear gaps between the protoplasts and the rigid cell walls. The intercellular spaces become enlarged and irregular."
+        }
+      }
+    ],
+    "idx": 52
+  },
+  {
+    "domain": "biology",
+    "images": [
+      "imgs/biology_1_1.jpg",
+      "imgs/biology_1_2.jpg",
+      "imgs/biology_1_3.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "What would it look like in Image #1 if it were winter?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #1": "What would it look like in <image> if it were winter?"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Add yellow pollen to the pine branches in Image #1."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "Image #2": "Add yellow pollen to the pine branches in <image>"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "In which season does the phenomenon in Image #3 occur?"
+      },
+      {
+        "role": "assistant",
+        "type": "text",
+        "content": "Spring.",
+        "key_point": null
+      }
+    ],
+    "idx": 53
+  },
+  {
+    "domain": "physics",
+    "images": [
+      "imgs/physics_4_1.jpg",
+      "imgs/physics_4_2.jpg",
+      "imgs/physics_4_3.jpg",
+      "imgs/physics_4_4.jpeg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "What happens when the ball in Image #1 hits the domino?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #2": "As shown in <image>, more dominoes fell."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Does Image #3 occur before or after Image #2?"
+      },
+      {
+        "role": "assistant",
+        "type": "text",
+        "content": "Image #3 occurs after Image #2.",
+        "key_point": null
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Does Image #4 occur before or after Image #3?"
+      },
+      {
+        "role": "assistant",
+        "type": "text",
+        "content": "Image #3 occurs after Image #4.",
+        "key_point": null
+      }
+    ],
+    "idx": 54
+  },
+  {
+    "domain": "physics",
+    "images": [
+      "imgs/physics_5_1.jpg",
+      "imgs/physics_5_2.jpg",
+      "imgs/physics_5_3.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Depict the scene two seconds after the tennis ball in Image #1 falls into the puddle."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #2": "Similar to <image>, the ball floats calmly on the water's surface, creating concentric ripples expanding outward."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Does Image #3 occur before or after Image #2?"
+      },
+      {
+        "role": "assistant",
+        "type": "text",
+        "content": "Image #3 occurs before Image #2.",
+        "key_point": null
+      }
+    ],
+    "idx": 55
+  },
+  {
+    "domain": "physics",
+    "images": [
+      "imgs/physics_6_1.png",
+      "imgs/physics_6_2.png",
+      "imgs/physics_6_3.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "What happens immediately after the rightmost ball in Image #1 collides with the ball next to it?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #2": "Similar to <image>, the leftmost ball flies off."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "What would occur in Image #1 under near-zero gravity conditions?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3.",
+        "key_point": {
+          "GT #3": "Similar to <image>, there are floating balls, no pendulum motion."
+        }
+      }
+    ],
+    "idx": 56
+  },
+  {
+    "domain": "optics",
+    "images": [
+      "imgs/optics_1_1.jpg",
+      "imgs/optics_1_2.jpg",
+      "imgs/optics_1_3.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Based on Image #1, if a convex lens is placed at the end of the light ray, with its plane perpendicular to the light but slightly lower than the triangular prism, how would the image change?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #2": "Similar to <image>: 1. A T-shaped pattern appears. 2. A convex lens is present."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Based on Image #1, if another identical triangular prism is placed such that one of its faces is perpendicular to the refracted light emitted by the original prism, how would the image change?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "GT #3": "Similar to <image>: 1. There are two triangular prisms. 2. The light remains white throughout."
+        }
+      }
+    ],
+    "idx": 57
+  },
+  {
+    "domain": "optics",
+    "images": [
+      "imgs/optics_2_1.jpg",
+      "imgs/optics_2_2.jpg",
+      "imgs/optics_2_3.jpg",
+      "imgs/optics_2_4.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "In Image #1, the dispersed light converges into a white beam. Why is this happening?"
+      },
+      {
+        "role": "assistant",
+        "type": "text",
+        "content": "Because the white paper is positioned at the focal point of the lens.",
+        "key_point": null
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "If the white paper in Image #1 is moved much closer, what happens to the image?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #2": "Similar to <image>: the converged white light will turn into thicker multicolored streaks."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "If the white paper in Image #1 is moved much farther away, until the position of the white paper showing the white light in the image is close to the left border of the picture, what happens to the image?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "GT #3": "Similar to <image>: the converged white light will turn into thicker multicolored streaks."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Between Image #3 and Image #4, which one is closer to the focal point?"
+      },
+      {
+        "role": "assistant",
+        "type": "text",
+        "content": "Image #4",
+        "key_point": null
+      }
+    ],
+    "idx": 58
+  },
+  {
+    "domain": "optics",
+    "images": [
+      "imgs/optics_3_1.jpg",
+      "imgs/optics_3_2.png",
+      "imgs/optics_3_3.jpg",
+      "imgs/optics_3_4.png"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Based on Image #1, if a convex lens is placed at the end of the light ray, with its plane perpendicular to the light but slightly lower than the triangular prism, how would the image change?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "GT #3": "Similar to <image>: Two prisms with opposite faces parallel to each other."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "If the light shown in Image #1 projects onto a screen as shown in Image #2, what would the light in Image #3 project onto the screen look like?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "GT #4": "Similar to <image>: white pure light in the wall."
+        }
+      }
+    ],
+    "idx": 59
+  },
+  {
+    "domain": "optics",
+    "images": [
+      "imgs/optics_4_1.png",
+      "imgs/optics_4_2.png",
+      "imgs/optics_4_3.png"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "What happens when after a period of time, three-fourths of the thin film has disappeared for Image #1?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #2": "Similar to <image>: One-fourth of the ring is empty, and interference phenomena still occur below."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "How does the width of the interference fringes of the thin film change over time for Image #1?"
+      },
+      {
+        "role": "assistant",
+        "type": "text",
+        "content": "It becomes wider.",
+        "key_point": null
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Does Image #3 occur before or after Image #2?"
+      },
+      {
+        "role": "assistant",
+        "type": "text",
+        "content": "Image #3 occurs after Image #2.",
+        "key_point": null
+      }
+    ],
+    "idx": 60
+  },
+  {
+    "domain": "fusion",
+    "images": [
+      "imgs/fusion_1_1.jpg",
+      "imgs/fusion_1_2.jpg",
+      "imgs/fusion_1_3.jpg",
+      "imgs/fusion_1_4.jpg",
+      "imgs/fusion_1_5.jpg",
+      "imgs/fusion_1_6.jpg",
+      "imgs/fusion_1_7.jpg",
+      "imgs/fusion_1_8.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Add gold lace on both sides of the glasses in the Image #4"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #7",
+        "key_point": {
+          "GT #4": "Add gold lace on both sides of the glasses in the <image>"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "The rabbit in Image #3 is wearing the glasses in Image #7 and holding the coffee in Image #5 while sitting in the garden."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #6",
+        "key_point": {
+          "GT #3": "The rabbit is same with <image>",
+          "GT #7": "The glass is same with <image>",
+          "GT #5": "coffee is same with <image>",
+          "Text": "a rabbit wearing the glasses is sitting in the garden"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Let the rabbit wearing sunglasses in Image #6 (remove the coffee) wear the swimming ring in Image #2 and soak in the pool in Image #1"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #8",
+        "key_point": {
+          "GT #6": "The rabbit wearing sunglasses is same with <image>",
+          "GT #2": "swimming ring is same with <image>",
+          "GT #1": "pool is same with <image>",
+          "Text": "The rabbit wear the swimming ring and soak in the pool"
+        }
+      }
+    ],
+    "idx": 61
+  },
+  {
+    "domain": "fusion",
+    "images": [
+      "imgs/fusion_2_1.jpg",
+      "imgs/fusion_2_2.jpg",
+      "imgs/fusion_2_3.png",
+      "imgs/fusion_2_4.jpeg",
+      "imgs/fusion_2_5.jpeg",
+      "imgs/fusion_2_6.jpg",
+      "imgs/fusion_2_7.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Generate a composite image where the person in Image #1 is wearing the flower from Image #2 on their head, and dressed in the clothes from Image #3."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #6",
+        "key_point": {
+          "GT #1": "The person is same with <image>",
+          "GT #2": "The flower is same with <image>",
+          "GT #3": "The clothes are same with <image>",
+          "Text": "flower on the girl's head"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Generate a composite image where the person in Image #6 is holding the bag on her right hand from Image #5 and standing in the scene of Image #4."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #7",
+        "key_point": {
+          "GT #6": "The person is same with <image>",
+          "GT #5": "The bag on her right hand is same with <image>",
+          "GT #4": "standing in the scene is same with <image>"
+        }
+      }
+    ],
+    "idx": 62
+  },
+  {
+    "domain": "fusion",
+    "images": [
+      "imgs/fusion_3_1.jpg",
+      "imgs/fusion_3_2.jpg",
+      "imgs/fusion_3_3.jpg",
+      "imgs/fusion_3_4.jpg",
+      "imgs/fusion_3_5.jpg",
+      "imgs/fusion_3_6.jpg",
+      "imgs/fusion_3_7.jpg",
+      "imgs/fusion_3_8.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Place the chair in Image #2 on the grass in Image #4"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #6",
+        "key_point": {
+          "GT #2": "The chair is same with <image>",
+          "GT #4": "The grass is same with <image>",
+          "Text": "a chair on the grass"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Put the sunglasses from Image #3 on the dog in Image #1 (making sure they fit the dog perfectly), and change its pose to a running action."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #7",
+        "key_point": {
+          "GT #3": "The sunglasses is same with <image>",
+          "GT #1": "The dog is same with <image>",
+          "Text": "making sure they fit the dog perfectly, and change its pose to a running action"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Place the ball from Image #5 onto the chair and the puppy from Image #7 onto the grass in Image #6, with the puppy reaching out its paw to grab the ball."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #8",
+        "key_point": {
+          "GT #5": "The ball is same with <image>",
+          "GT #7": "The puppy is same with <image>",
+          "GT #6": "The grass is same with <image>",
+          "Text": "Place the ball onto the chair and the puppy onto the grass, with the puppy reaching out its paw to grab the ball."
+        }
+      }
+    ],
+    "idx": 63
+  },
+  {
+    "domain": "chemistry",
+    "images": [
+      "imgs/chemistry_7_1.png",
+      "imgs/chemistry_7_2.jpg",
+      "imgs/chemistry_7_3.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Add a few drops of strawberry to the whole milk in Image #1"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #2": "There are a few drops of strawberry to the whole milk as shown in <image>"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "What will Image #2 look like 3 minutes after adding lemon juice?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "GT #3": "Similar to the <image>, white curd forms, whey separates, and proteins coagulate."
+        }
+      }
+    ],
+    "idx": 64
+  },
+  {
+    "domain": "chemistry",
+    "images": [
+      "imgs/chemistry_8_1.jpeg",
+      "imgs/chemistry_8_2.jpg",
+      "imgs/chemistry_8_3.jpeg",
+      "imgs/chemistry_8_4.jpeg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "If the liquid in Image #1 is saturated sodium chloride and the wire is copper, what will happen after a few hours?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #2": "Similar to the <image>, a large number of crystals will adhere to the copper wire."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "What happens when barium chloride is added to the sodium sulfate solution in Image #1?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "GT #3": "Similar to the <image>, a white flocculent or powdery precipitate of barium sulfate forms, causing the solution to become turbid and opaque, with a large amount of white solid visible suspended in the liquid."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "If the liquid in Image #1 is a 3% saltwater solution and the wire is iron, what will happen after 6 hours?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "GT #4": "Similar to the <image>, the iron wire will be covered with orange-brown rust; surface corrosion is clearly visible."
+        }
+      }
+    ],
+    "idx": 65
+  },
+  {
+    "domain": "mathematics",
+    "images": [
+      "imgs/math_1_1.jpg",
+      "imgs/math_1_2.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "What would happen if the tape measure in Image #1 are pulled to 7 cm?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #1": "the tape measure in <image> are pulled to 7 cm?"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "How much of the tape measure was pulled out from Image #1 to Image #2?"
+      },
+      {
+        "role": "assistant",
+        "type": "text",
+        "content": "0.5 cm.",
+        "key_point": null
+      }
+    ],
+    "idx": 66
+  },
+  {
+    "domain": "mathematics",
+    "images": [
+      "imgs/math_2_1.jpg",
+      "imgs/math_2_2.png",
+      "imgs/math_2_3.png"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "What is the value of b in Image #1? Please give a brief solution process"
+      },
+      {
+        "role": "assistant",
+        "type": "text",
+        "content": "1.541; Process: ∠C=180∘-37∘-68∘=75∘; b/sinB=a/sinA;sin68∘≈0.9272,sin37∘≈0.6018;b≈0.6018/0.9272≈1.541",
+        "key_point": null
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Draw a line through point A perpendicular to BC, with the foot of the perpendicular being D, and remove the number 3 from Image #1."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #2": "Similar to <image>, there is a line through point A perpendicular to BC, with the foot of the perpendicular being D."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Based on the length of b calculated in the previous two questions, compute the numerical length of DC in Image #2."
+      },
+      {
+        "role": "assistant",
+        "type": "text",
+        "content": "0.927. Process: sin37∘*1.541",
+        "key_point": null
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "In Image #3, I drew CD=AC, with point C on AB. What should be the measure of angle ACD? "
+      },
+      {
+        "role": "assistant",
+        "type": "text",
+        "content": "37 degrees.",
+        "key_point": null
+      }
+    ],
+    "idx": 67
+  },
+  {
+    "domain": "mathematics",
+    "images": [
+      "imgs/math_3_1.jpg",
+      "imgs/math_3_2.png",
+      "imgs/math_3_3.png"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Remove the line between 65 and 70 degrees and change the angle label to 135 degrees in Image #1"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #2": "<image>As shown in the diagram, it is labeled 135 degrees. There are no different labels or lines compared to the diagram."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "What is x in Image #2?"
+      },
+      {
+        "role": "assistant",
+        "type": "text",
+        "content": "225 degrees",
+        "key_point": null
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "If there were another 135-degree semicircle in Image #2, what would it be like? Please mark the remaining part as x degrees."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "GT #3": "As shown in the <image>, there is a 90-degree angle labeled 'x', and its position is also consistent with the image."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "In Image #3, is x larger, or is x larger in Image #1?"
+      },
+      {
+        "role": "assistant",
+        "type": "text",
+        "content": "37 degrees.",
+        "key_point": null
+      }
+    ],
+    "idx": 68
+  },
+  {
+    "domain": "optics",
+    "images": [
+      "imgs/optics_6_1.png",
+      "imgs/optics_6_2.png",
+      "imgs/optics_6_3.png"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "What happens if the person in Image #1 walks left toward the wall?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #2": "As shown in the <image>, the person is close to the wall, and attention should be paid to whether the light from the torch in their hand is rendered correctly."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "The person in Image #1 turns their body 45 degrees to the right and raises the torch in front of them."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "GT #3": "<image>The orientation of the person, the placement of the walls, and the rendering of the light need to be similar to those in the picture."
+        }
+      }
+    ],
+    "idx": 69
+  },
+  {
+    "domain": "optics",
+    "images": [
+      "imgs/optics_7_1.png",
+      "imgs/optics_7_2.png",
+      "imgs/optics_7_3.jpeg",
+      "imgs/optics_7_4.jpeg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "What happens if the person in Image #1 walks forward to the nearest tree?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #1": "It's the scene of walking forward in the <image>."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Change the time in Image #2 to early morning after sunrise, with the sun rising directly in front."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "GT #3": "As shown in <image>, the trees' shadows extend toward the person."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Change the time in Image #2 to early morning after sunrise, with the sun rising from the front right side."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "GT #4": "As shown in <image>, the trees' shadows extend from the front right toward the person."
+        }
+      }
+    ],
+    "idx": 70
+  },
+  {
+    "domain": "story",
+    "images": [
+      "imgs/story_1_1.jpg",
+      "imgs/story_1_2.jpg",
+      "imgs/story_1_3.jpg",
+      "imgs/story_1_4.jpg",
+      "imgs/story_1_5.jpeg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Image #1 depicts Little Red Riding Hood (the little girl in a red cloak) setting off from home, carrying a basket. Based on this, create an image showing Little Red Riding Hood encountering the big bad wolf (with gray fur and pointed ears) on a forest path."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #1": "Maintain Little Red Riding Hood's appearance as <image>.",
+          "Text": "The picture depicts Little Red Riding Hood encountering the big bad wolf (with gray fur and pointed ears) on a forest path."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Building on Image #2, create an image where the big bad wolf arrives at Grandma’s house first and disguises himself as Grandma lying in bed."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "GT #2": "Maintain big bad wolf's appearance as <image>.",
+          "Text": "The picture depicts the big bad wolf arrives at Grandma’s house first and disguises himself as Grandma lying in bed."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Based on Image #2, create an image where Little Red Riding Hood enters Grandma’s house and notices something unusual about 'Grandma.'"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "GT #2": "Maintain big bad wolf's appearance and Little Red Riding Hood's appearance as <image>.",
+          "Text": "Little Red Riding Hood enters Grandma’s house and notices the wolf"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Expanding on Image #4, create an image where the hunter (a man in a brown coat) aims his gun at the wolf disguised as the grandmother, while Little Red Riding Hood and the true grandmother stand beside the hunter."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #5",
+        "key_point": {
+          "GT #2": "Maintain big bad wolf's appearance and Little Red Riding Hood's appearance as <image>.",
+          "GT #4": "Keep the background (except for the characters) and the image consistent as <image>.",
+          "Text": "The image depicts a hunter (a man in a brown coat) aiming his gun at the wolf disguised as the grandmother, with Little Red Riding Hood and the true grandmother standing beside the hunter."
+        }
+      }
+    ],
+    "idx": 71
+  },
+  {
+    "domain": "story",
+    "images": [
+      "imgs/story_2_1.jpg",
+      "imgs/story_2_2.jpg",
+      "imgs/story_2_3.jpg",
+      "imgs/story_2_4.jpg",
+      "imgs/story_2_5.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Image #1: A chef (wearing a tall white hat and a white uniform, no beard) prepares ingredients and tools. Follow this by creating an image of the same chef cracking eggs and mixing flour."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #1": "Maintain the chef's appearance as <image>.",
+          "Text": "The picture depicts the chef (wearing a tall white hat and a white uniform, no beard) cracking eggs and mixing flour."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Based on Image #2, create an image of the chef pouring the batter into a mold."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "GT #2": "Maintain the chef's appearance as <image>.",
+          "Text": "The picture depicts the chef pouring the batter into a mold."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Based on Image #3, create an image of the chef placing the mold into an oven."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "GT #2": "Maintain the chef's appearance as <image>.",
+          "Text": "The picture depicts the chef placing the mold into an oven."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Based on Image #4, create an image of the chef taking the baked cake out of the oven and decorating it."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #5",
+        "key_point": {
+          "GT #2": "Maintain the chef's appearance and the kitchen background as <image>.",
+          "Text": "The picture depicts the chef taking the baked cake out of the oven and decorating it."
+        }
+      }
+    ],
+    "idx": 72
+  },
+  {
+    "domain": "story",
+    "images": [
+      "imgs/story_3_1.jpg",
+      "imgs/story_3_2.jpg",
+      "imgs/story_3_3.jpg",
+      "imgs/story_3_4.jpg",
+      "imgs/story_3_5.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Image #1 shows a superhero (in blue tight-fitting suit and red cape) receiving an alert at home. Based on this, create a follow-up image of the hero flying over the city and seeing a monster (green, multi-tentacled) destroying buildings."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #1": "Maintain superhero's appearance as <image>.",
+          "Text": "The picture depicts the superhero (in blue tight-fitting suit and red cape) flying over the city and seeing a green, multi-tentacled monster destroying buildings."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Based on Image #2, the hero engages in battle with the monster."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "GT #2": "Maintain superhero's appearance and monster's appearance as <image>.",
+          "Text": "The picture depicts the superhero engaging in battle with the green, multi-tentacled monster."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Based on Image #3, the hero defeats the monster."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "GT #2": "Maintain superhero's appearance and monster's appearance as <image>.",
+          "Text": "The picture depicts the superhero defeating the green, multi-tentacled monster."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Based on Image #4, the citizens cheer and express gratitude to the hero."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #5",
+        "key_point": {
+          "GT #2": "Maintain superhero's appearance as <image>.",
+          "Text": "The picture depicts citizens cheering and expressing gratitude to the superhero after defeating the monster."
+        }
+      }
+    ],
+    "idx": 73
+  },
+  {
+    "domain": "story",
+    "images": [
+      "imgs/story_4_1.jpg",
+      "imgs/story_4_2.jpg",
+      "imgs/story_4_3.jpg",
+      "imgs/story_4_4.jpg",
+      "imgs/story_4_5.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Image #1 shows an orange kitten waking up on a sunny windowsill and stretching. Create a follow-up image for me of the same kitten eating breakfast (with its owner nearby)."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #1": "Maintain the orange kitten's appearance as <image>.",
+          "Text": "The picture depicts the orange kitten eating breakfast with its owner nearby."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Based on Image #2, the kitten is chasing butterflies in the yard."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "GT #1": "Maintain the orange kitten's appearance as <image>.",
+          "Text": "The picture depicts the orange kitten chasing butterflies in the yard."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Based on Image #3, the kitten climbs up a tree but can't get down, and the owner looks panicked."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "GT #2": "Maintain the orange kitten's and owner's appearance as <image>.",
+          "Text": "The picture depicts the kitten stuck in a tree unable to get down, with the panicked owner below."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Based on Image #4, a firefighter uses a ladder to rescue the kitten, and the owner holds it in their arms."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #5",
+        "key_point": {
+          "GT #2": "Maintain the orange kitten's and owner's appearance as <image>.",
+          "GT #4": "Keep the tree and surrounding yard consistent with <image>.",
+          "Text": "The picture depicts a firefighter using a ladder to rescue the kitten, with the owner holding it in their arms."
+        }
+      }
+    ],
+    "idx": 74
+  },
+  {
+    "domain": "story",
+    "images": [
+      "imgs/story_5_1.jpg",
+      "imgs/story_5_2.jpg",
+      "imgs/story_5_3.jpg",
+      "imgs/story_5_4.jpeg",
+      "imgs/story_5_5.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Image #1 depicts an old wizard (with a long white beard, purple robe, and pointed hat) preparing a potion in his laboratory, accompanied by a young apprentice. Following this, create an image for me where the wizard adds a glowing blue liquid to the cauldron, causing it to emit smoke."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #1": "Maintain the wizard's appearance (long white beard, purple robe, pointed hat) and the young apprentice's appearance as <image>.",
+          "Text": "The picture depicts the wizard adding a glowing blue liquid to the cauldron, causing it to emit smoke."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Based on Image #2, the experiment goes awry: an explosion produces colorful smoke, and the apprentice is engulfed in the mist."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "GT #1": "Maintain the wizard's appearance (long white beard, purple robe, pointed hat) and the young apprentice's appearance as <image>.",
+          "Text": "The picture depicts an explosion producing colorful smoke, with the apprentice engulfed in the mist."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Based on Image #3, the young apprentice has been transformed into a frog."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "GT #1": "Maintain the wizard's appearance (long white beard, purple robe, pointed hat) as <image>.",
+          "Text": "The picture depicts the young apprentice transformed into a frog."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Based on Image #4, the wizard is flipping through a magic book in search of an antidote, with the frog nearby."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #5",
+        "key_point": {
+          "GT #1": "Maintain the wizard's appearance (long white beard, purple robe, pointed hat) as <image>.",
+          "GT #4": "Keep the frog (transformed apprentice) appearance consistent as <image>.",
+          "Text": "The picture depicts the wizard flipping through a magic book in search of an antidote, with the frog nearby."
+        }
+      }
+    ],
+    "idx": 75
+  },
+  {
+    "domain": "story",
+    "images": [
+      "imgs/story_6_1.jpg",
+      "imgs/story_6_2.jpg",
+      "imgs/story_6_3.jpg",
+      "imgs/story_6_4.jpg",
+      "imgs/story_6_5.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Image #1 shows Elsa wearing gloves, nervously accepting the crown. Next, create an image for me of Anna announcing her engagement, with Elsa becoming emotionally agitated."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #1": "Maintain Elsa's appearance as <image>.",
+          "Text": "The picture depicts Anna announcing her engagement with Elsa becoming emotionally agitated."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Based on Image #2, create an image where Elsa's glove comes off and her ice magic erupts in front of everyone."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "GT #1": "Maintain Elsa's appearance as <image>.",
+          "Text": "The picture depicts Elsa's glove coming off and her ice magic erupting in front of everyone."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Based on Image #3, create an image of Elsa running toward the North Mountain, leaving a trail of ice and snow behind her."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "GT #1": "Maintain Elsa's appearance as <image>.",
+          "Text": "The picture depicts Elsa running toward the North Mountain, leaving a trail of ice and snow behind her."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Based on Image #4, create an image of Elsa singing as she creates her ice castle."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #5",
+        "key_point": {
+          "GT #1": "Maintain Elsa's appearance as <image>",
+          "Text": "The picture depicts Elsa singing as she creates her ice castle."
+        }
+      }
+    ],
+    "idx": 76
+  },
+  {
+    "domain": "story",
+    "images": [
+      "imgs/story_7_1.jpg",
+      "imgs/story_7_2.jpg",
+      "imgs/story_7_3.jpg",
+      "imgs/story_7_4.jpg",
+      "imgs/story_7_5.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Image #1 shows Buzz Lightyear making his debut as a new toy. Buzz is dressed in a green, white, and purple spacesuit, with a red button, a helmet, and wings. The unique 'Soar to Space, Space Is Infinite' slogan is etched on the box. For the next image, create a scene where Buzz snatches Woody's hat, and Woody looks jealous."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #1": "Maintain Buzz Lightyear's appearance as <image>.",
+          "Text": "The picture depicts Buzz snatching Woody's hat, with Woody looking jealous."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Based on Image #2, create an image of Buzz watching his own toy commercial on television."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "GT #1": "Maintain Buzz Lightyear's appearance as <image>.",
+          "Text": "The picture depicts Buzz watching his own toy commercial on television."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Based on Image #3, create an image of Buzz with a broken arm, realizing he is just a toy and feeling devastated, followed by him falling down the stairs."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "GT #1": "Maintain Buzz Lightyear's appearance as <image>.",
+          "Text": "The picture depicts Buzz with a broken arm, realizing he is just a toy and feeling devastated, falling down the stairs."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Based on Image #4, create an image of Woody comforting Buzz, helping him regain his confidence, while the other toys watch happily as Buzz bounces back."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #5",
+        "key_point": {
+          "GT #2": "Maintain Buzz Lightyear's appearance and Woody's appearance as <image>.",
+          "Text": "The image depicts Woody comforting Buzz, helping him regain his confidence, while the other toys watch happily as Buzz bounces back."
+        }
+      }
+    ],
+    "idx": 77
+  },
+  {
+    "domain": "story",
+    "images": [
+      "imgs/story_8_1.jpg",
+      "imgs/story_8_2.jpg",
+      "imgs/story_8_3.jpg",
+      "imgs/story_8_4.jpg",
+      "imgs/story_8_5.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Image #1 shows Mei (in a light yellow dress) and Satsuki (in a pink dress) discovering the small black soot spirits in their new home. Based on this, create an image of Mei chasing a small white and blue Totoro into the forest."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #1": "Maintain Mei's appearance (in a light yellow dress) as <image>.",
+          "Text": "The picture depicts Mei chasing a small white and blue Totoro into the forest."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Building on Image #2, create an image of Mei crawling into a tree hollow and falling asleep on the large Totoro's belly."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "GT #1": "Maintain Mei's appearance (in a light yellow dress) as <image>.",
+          "Text": "The picture depicts Mei crawling into a tree hollow and falling asleep on the large Totoro's belly."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Based on Image #3, create an image of Satsuki holding an umbrella for Totoro, while Totoro gives her an acorn."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "GT #1": "Maintain Satsuki (in a pink dress) as <image>.",
+          "Text": "The picture depicts Satsuki holding an umbrella for Totoro, while Totoro gives her an acorn."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Expanding on Image #4, create an image of Satsuki and Mei riding the multi-legged Catbus, flying toward the hospital to visit their mother."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #5",
+        "key_point": {
+          "GT #1": "Maintain Mei's appearance and Satsuki's appearance as <image>.",
+          "GT #4": "Keep the background (except for the characters) and the image consistent as <image>.",
+          "Text": "The image depicts Satsuki and Mei riding the multi-legged Catbus, flying toward the hospital to visit their mother."
+        }
+      }
+    ],
+    "idx": 78
+  },
+  {
+    "domain": "story",
+    "images": [
+      "imgs/story_10_1.jpg",
+      "imgs/story_10_2.jpg",
+      "imgs/story_10_3.jpg",
+      "imgs/story_10_4.jpg",
+      "imgs/story_10_5.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Image #1 shows Chihiro's parents turning into pigs due to their greed, leaving Chihiro crying alone. Following this, create an image where, with the help of Haku in human form, she secures a job at the bathhouse from Yubaba, and Chihiro changes into a red work uniform."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #1": "Maintain Chihiro's appearance as <image>.",
+          "Text": "The picture depicts Chihiro securing a job at the bathhouse with Haku's help, meeting Yubaba, and wearing a red work uniform."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Building on Image #2, create an image of Chihiro assisting in cleaning the Stink God and receiving a magical dumpling as a reward."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "GT #1": "Maintain Chihiro's appearance as <image>.",
+          "Text": "The picture depicts Chihiro cleaning the Stink God and receiving a magical dumpling as reward."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Based on Image #3, create an image where Chihiro uses the River God's dumpling to help No-Face vomit and return to normal."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "GT #1": "Maintain Chihiro's appearance as <image>.",
+          "GT #3": "Keep the magical dumpling consistent with <image>.",
+          "Text": "The picture shows Chihiro using the River God's dumpling to help No-Face vomit and return to normal."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Expanding on Image #4, create an image of Chihiro gently stroking Haku, who has transformed into a dragon, with flying paper cranes surrounding them."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #5",
+        "key_point": {
+          "GT #1": "Maintain Chihiro's appearance as <image>.",
+          "Text": "The image depicts Chihiro gently stroking Haku in dragon form, with flying paper cranes surrounding them."
+        }
+      }
+    ],
+    "idx": 79
+  },
+  {
+    "domain": "story",
+    "images": [
+      "imgs/story_9_1.jpg",
+      "imgs/story_9_2.jpg",
+      "imgs/story_9_3.jpg",
+      "imgs/story_9_4.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Based on Image #1, create an image where Miguel's face shows white skeletal makeup patterns, his skin appears translucent, and he looks terrified as he stares at his own hands. The surrounding cemetery becomes vibrant and colorful, with colorful skeletal spirits clearly visible. Marigold petals float in the air, and a distant orange marigold bridge glows."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #1": "Maintain Miguel's appearance as <image>.",
+          "Text": "The picture depicts Miguel with white skeletal makeup patterns, translucent skin, looking terrified at his hands in a vibrant colorful cemetery with visible skeletal spirits, floating marigold petals, and a glowing orange marigold bridge in the distance."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Based on Image #2, create an image set on a spectacular marigold bridge. Miguel, in his skeletal makeup state, is surrounded by his skeletal family members. His great-great-grandmother Imelda (a skeleton in a purple long dress) points at him angrily, while other skeletal ancestors wear distinctive clothing. In the background, the radiant city of the Land of the Dead shines brightly."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "GT #2": "Maintain Miguel's skeletal makeup appearance as <image>.",
+          "Text": "The picture depicts Miguel on a spectacular marigold bridge, surrounded by skeletal family members, with his great-great-grandmother Imelda in a purple dress pointing angrily at him, other ancestors in distinctive clothing, and the radiant Land of the Dead city shining in the background."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Based on Image #3, create an image of a party scene with neon lights and fireworks flickering. Miguel (in skeletal makeup, wearing a hoodie, and carrying a guitar) and Héctor (a thin skeleton in a tattered suit) hide behind a giant marigold decoration. Héctor makes a 'shush' gesture."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "GT #2": "Maintain Miguel's skeletal makeup appearance as <image>.",
+          "GT #3": "Maintain skeletal family members' appearances as <image>.",
+          "Text": "The picture depicts a party scene with neon lights and fireworks where Miguel in skeletal makeup with a hoodie and guitar, and Héctor, a thin skeleton in a tattered suit, hide behind a giant marigold decoration with Héctor making a 'shush' gesture."
+        }
+      }
+    ],
+    "idx": 80
+  },
+  {
+    "domain": "fusion",
+    "images": [
+      "imgs/fusion_4_1.jpg",
+      "imgs/fusion_4_2.jpg",
+      "imgs/fusion_4_3.jpg",
+      "imgs/fusion_4_4.jpg",
+      "imgs/fusion_4_5.jpg",
+      "imgs/fusion_4_6.jpeg",
+      "imgs/fusion_4_7.jpg",
+      "imgs/fusion_4_8.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Insert one flower from Image #2 and one flower from Image #3 into the bag in Image #1."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #5",
+        "key_point": {
+          "GT #2": "One of the flower is same with <image>",
+          "GT #3": "One of the flower is same with <image>",
+          "GT #1": "The bag is same with <image>",
+          "Text": "Insert one flower from each image into the bag"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Have the woman in Image #4 hold the bag containing flowers from Image #5."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #7",
+        "key_point": {
+          "GT #4": "The woman is same with <image>",
+          "GT #5": "The bag containing flowers is same with <image>",
+          "Text": "Have the woman hold the bag containing flowers"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "The woman holding the bag with flowers in Image #7 is placed against the background of Image #6."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #8",
+        "key_point": {
+          "GT #7": "The woman holding the bag with flowers is same with <image>",
+          "GT #6": "The background is same with <image>",
+          "Text": "The woman holding the bag with flowers is placed against the background"
+        }
+      }
+    ],
+    "idx": 81
+  },
+  {
+    "domain": "fusion",
+    "images": [
+      "imgs/fusion_5_1.jpeg",
+      "imgs/fusion_5_2.jpg",
+      "imgs/fusion_5_3.jpg",
+      "imgs/fusion_5_4.jpg",
+      "imgs/fusion_5_5.jpg",
+      "imgs/fusion_5_6.jpg",
+      "imgs/fusion_5_7.jpg",
+      "imgs/fusion_5_8.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Insert one flower from Image #2 and one flower from Image #3 into the bag in Image #1."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #5",
+        "key_point": {
+          "GT #2": "The flower is same with <image>",
+          "GT #3": "The flower is same with <image>",
+          "GT #1": "The bag is same with <image>",
+          "Text": "Insert one flower from each image into the bag"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Have the woman in Image #4 hold the bag containing flowers from Image #5."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #7",
+        "key_point": {
+          "GT #4": "The woman is same with <image>",
+          "GT #5": "The bag containing flowers is same with <image>",
+          "Text": "Have the woman hold the bag containing flowers"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "The woman holding the bag with flowers in Image #7 is placed against the background of Image #6."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #8",
+        "key_point": {
+          "GT #7": "The woman holding the bag with flowers is same with <image>",
+          "GT #6": "The background is same with <image>",
+          "Text": "The woman holding the bag with flowers is placed against the background"
+        }
+      }
+    ],
+    "idx": 82
+  },
+  {
+    "domain": "fusion",
+    "images": [
+      "imgs/fusion_6_1.jpg",
+      "imgs/fusion_6_2.jpg",
+      "imgs/fusion_6_3.jpg",
+      "imgs/fusion_6_4.jpg",
+      "imgs/fusion_6_5.jpg",
+      "imgs/fusion_6_6.jpg",
+      "imgs/fusion_6_7.jpg",
+      "imgs/fusion_6_8.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Put the glasses from Image #1 on the cat in Image #2."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #6",
+        "key_point": {
+          "GT #1": "The glasses is same with <image>",
+          "GT #2": "The cat is same with <image>",
+          "Text": "Put the glasses on the cat"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Make the cat in Image #6 —now wearing glasses—hold the cola from Image #5 in its left hand and the burger from Image #4 in its right hand."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #7",
+        "key_point": {
+          "GT #6": "The cat wearing glasses is same with <image>",
+          "GT #5": "The cola is same with <image>",
+          "GT #4": "The burger is same with <image>",
+          "Text": "Make the cat hold the cola in its left hand and the burger in its right hand"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Place the cat wearing glasses and holding the cola and burger from Image #7 on the table (remove the vase) in Image #3."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #8",
+        "key_point": {
+          "GT #7": "The cat wearing glasses and holding the cola and burger is same with <image>",
+          "GT #3": "The table is same with <image>",
+          "Text": "Place the cat on the table (remove the vase)"
+        }
+      }
+    ],
+    "idx": 83
+  },
+  {
+    "domain": "fusion",
+    "images": [
+      "imgs/fusion_7_1.jpg",
+      "imgs/fusion_7_2.jpg",
+      "imgs/fusion_7_3.jpg",
+      "imgs/fusion_7_4.jpg",
+      "imgs/fusion_7_5.jpg",
+      "imgs/fusion_7_6.jpg",
+      "imgs/fusion_7_7.jpg",
+      "imgs/fusion_7_8.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Print the icon from Image #5 on the bag in Image #4."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #6",
+        "key_point": {
+          "GT #5": "The icon is same with <image>",
+          "GT #4": "The bag is same with <image>",
+          "Text": "Print the icon on the bag"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Assemble the computer from Image #2 and the keyboard from Image #3, then place them on the table in Image #1."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #7",
+        "key_point": {
+          "GT #2": "The computer is same with <image>",
+          "GT #3": "The keyboard is same with <image>",
+          "GT #1": "The table is same with <image>",
+          "Text": "Assemble the computer and the keyboard, then place them on the table"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Place the bag from Image #6 on the table with the computer and keyboard in Image #7."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #8",
+        "key_point": {
+          "GT #6": "The bag is same with <image>",
+          "GT #7": "The table with the computer and keyboard is same with <image>",
+          "Text": "Place the bag on the table with the computer and keyboard"
+        }
+      }
+    ],
+    "idx": 84
+  },
+  {
+    "domain": "fusion",
+    "images": [
+      "imgs/fusion_8_1.jpg",
+      "imgs/fusion_8_2.jpg",
+      "imgs/fusion_8_3.jpeg",
+      "imgs/fusion_8_4.jpg",
+      "imgs/fusion_8_5.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Change the river in front of the snow-capped mountain in Image #2 to the grassland in Image #1."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "GT #2": "The snow-capped mountain is same with <image>",
+          "GT #1": "The grassland is same with <image>",
+          "Text": "Change the river in front of the mountain to grassland"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Place the cow from Image #3 onto the grassland in Image #4."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #5",
+        "key_point": {
+          "GT #3": "The cow is same with <image>",
+          "GT #4": "The grassland is same with <image>",
+          "Text": "Place the cow onto the grassland"
+        }
+      }
+    ],
+    "idx": 85
+  },
+  {
+    "domain": "fusion",
+    "images": [
+      "imgs/fusion_9_1.jpg",
+      "imgs/fusion_9_2.jpg",
+      "imgs/fusion_9_3.jpg",
+      "imgs/fusion_9_4.jpg",
+      "imgs/fusion_9_5.jpg",
+      "imgs/fusion_9_6.jpg",
+      "imgs/fusion_9_7.jpg",
+      "imgs/fusion_9_8.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Make the person in Image #3 wear the clothes from Image #5."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #6",
+        "key_point": {
+          "GT #3": "The person is same with <image>",
+          "GT #5": "The clothes is same with <image>",
+          "Text": "Make the person wear the clothes"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Change the desktop background of the computer in Image #1 to the image from Image #2, and place the bag from Image #4 on the desk."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #7",
+        "key_point": {
+          "GT #1": "The computer is same with <image>",
+          "GT #2": "The desktop background is same with <image>",
+          "GT #4": "The bag is same with <image>",
+          "Text": "Change the desktop background and place the bag on the desk"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Have the person in Image #6 sit on the stool within the scene of Image #7, keeping the rest of that image's content unchanged."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #8",
+        "key_point": {
+          "GT #6": "The person is same with <image>",
+          "GT #7": "The scene is same with <image>",
+          "Text": "Have the person sit on the stool within the scene, keeping the rest of that image's content unchanged"
+        }
+      }
+    ],
+    "idx": 86
+  },
+  {
+    "domain": "fusion",
+    "images": [
+      "imgs/fusion_10_1.jpg",
+      "imgs/fusion_10_2.jpg",
+      "imgs/fusion_10_3.jpg",
+      "imgs/fusion_10_4.jpg",
+      "imgs/fusion_10_5.jpg",
+      "imgs/fusion_10_6.jpg",
+      "imgs/fusion_10_7.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Replace the background of the snowman in Image #1 with that of Image #2."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #5",
+        "key_point": {
+          "GT #1": "The snowman is same with <image>",
+          "GT #2": "The background is same with <image>",
+          "Text": "Replace the background of the snowman with that of Image #2"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Make the sculpture in Image #3 hold the trident from Image #4."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #6",
+        "key_point": {
+          "GT #3": "The sculpture is same with <image>",
+          "GT #4": "The trident is same with <image>",
+          "Text": "Make the sculpture hold the trident"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Place the spear-holding sculpture from Image #6 next to the snowman in Image #5."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #7",
+        "key_point": {
+          "GT #6": "The spear-holding sculpture is same with <image>",
+          "GT #5": "The snowman is same with <image>",
+          "Text": "Place the spear-holding sculpture next to the snowman"
+        }
+      }
+    ],
+    "idx": 87
+  },
+  {
+    "domain": "fusion",
+    "images": [
+      "imgs/fusion_11_1.jpg",
+      "imgs/fusion_11_2.jpg",
+      "imgs/fusion_11_3.jpg",
+      "imgs/fusion_11_4.jpg",
+      "imgs/fusion_11_5.jpeg",
+      "imgs/fusion_11_6.jpg",
+      "imgs/fusion_11_7.jpg",
+      "imgs/fusion_11_8.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Put the clothes from Image #2 on the person in Image #1, and the pants from Image #3 on them."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #6",
+        "key_point": {
+          "GT #2": "The clothes is same with <image>",
+          "GT #1": "The person is same with <image>",
+          "GT #3": "The pants is same with <image>",
+          "Text": "Put the clothes on the person, and the pants on them"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Let the person in Image #6 sit on the bed in Image #5."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #7",
+        "key_point": {
+          "GT #6": "The person is same with <image>",
+          "GT #5": "The bed is same with <image>",
+          "Text": "Let the person sit on the bed"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Make the person sitting on the bed in Image #7 change into the shoes from Image #3."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #8",
+        "key_point": {
+          "GT #7": "The person sitting on the bed is same with <image>",
+          "GT #3": "The shoes is same with <image>",
+          "Text": "Make the person change into the shoes"
+        }
+      }
+    ],
+    "idx": 88
+  },
+  {
+    "domain": "fusion",
+    "images": [
+      "imgs/fusion_12_1.jpg",
+      "imgs/fusion_12_2.jpg",
+      "imgs/fusion_12_3.jpg",
+      "imgs/fusion_12_4.png",
+      "imgs/fusion_12_5.jpg",
+      "imgs/fusion_12_6.jpg",
+      "imgs/fusion_12_8.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Turn the horse in Image #1 into a unicorn."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #5",
+        "key_point": {
+          "GT #1": "The horse is same with <image>",
+          "Text": "Turn the horse into a unicorn"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Make the person (still holds the bag) in Image #3 wear the clothes from Image #4 and put on the wreath from Image #1."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #6",
+        "key_point": {
+          "GT #3": "The person is same with <image>",
+          "GT #4": "The clothes is same with <image>",
+          "GT #1": "The wreath is same with <image>",
+          "Text": "Make the person (still holds the bag) wear the clothes and put on the wreath"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Make the person in Image #6 ride the unicorn in the background from Image #5."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #7",
+        "key_point": {
+          "GT #6": "The person is same with <image>",
+          "GT #5": "The unicorn is same with <image>",
+          "Text": "Make the person ride the unicorn in the background"
+        }
+      }
+    ],
+    "idx": 89
+  },
+  {
+    "domain": "astronomy",
+    "images": [
+      "imgs/astronomy_1_1.jpeg",
+      "imgs/astronomy_1_2.jpeg",
+      "imgs/astronomy_1_3.jpeg",
+      "imgs/astronomy_1_4.jpeg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "We already know that Image #1 is from the third day of the lunar month. What will it look like on the ninth day?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #2": "As shown in <image>, the entire right half of the moon will be visible."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "What will it look like six days after Image #2?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "GT #3": "As shown in <image>, it's a full moon"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "What will it look like six days after Image #3?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "GT #3": "As shown in <image>, the left half of the moon will be visible."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "How many days will it take for the moon phase in Image #4 to return to the moon phase in Image #1? "
+      },
+      {
+        "role": "assistant",
+        "type": "text",
+        "content": "12 days.",
+        "key_point": null
+      }
+    ],
+    "idx": 90
+  },
+  {
+    "domain": "astronomy",
+    "images": [
+      "imgs/astronomy_2_1.jpeg",
+      "imgs/astronomy_2_2.jpeg",
+      "imgs/astronomy_2_3.jpeg",
+      "imgs/astronomy_2_4.jpeg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "What happens when the iron core of the red giant in Image #1 exceeds the Chandrasekhar limit?"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #2": "Similar to the <image>, it depicts a scene of a supernova explosion."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Make Image #2 brighter"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "Image #2": "Make the star in <image> brighter"
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Does Image #3 appear before or after Image #2?"
+      },
+      {
+        "role": "assistant",
+        "type": "text",
+        "content": "Image #3 appears after Image #2.",
+        "key_point": null
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Does Image #4 appear before or after Image #3? "
+      },
+      {
+        "role": "assistant",
+        "type": "text",
+        "content": "Image #4 appears after Image #3 (Image #4 is a supernova remnant, consisting of an expanding gas cloud and a central compact star).",
+        "key_point": null
+      }
+    ],
+    "idx": 91
+  },
+  {
+    "domain": "astronomy",
+    "images": [
+      "imgs/astronomy_3_1.jpg",
+      "imgs/astronomy_3_2.jpg",
+      "imgs/astronomy_3_4.jpg",
+      "imgs/astronomy_3_3.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "How does the surface change when the comet in Image #1 approaches the sun? "
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #1": "The comet's surface as shown in <image> begins to vaporize."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Modify the comet in Image #2 so that it develops a coma and a long tail."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "Image #2": "Modify the comet in <image> so that it develops a coma and a long tail."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Make the tail of the comet in Image #3 shorter."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "Image #3": "Make the tail of the comet in <image> shorter."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "If the tail of the comet in Image #3 is the longest and brightest, is it at its farthest distance from the sun??"
+      },
+      {
+        "role": "assistant",
+        "type": "text",
+        "content": "No, it is at its closest distance to the sun.",
+        "key_point": null
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "If the comet's tail in Image #3 is the longest and brightest, could the scenario in Image #4 occur before or after it?"
+      },
+      {
+        "role": "assistant",
+        "type": "text",
+        "content": "Both are possible, because Image #3 represents the perihelion.",
+        "key_point": null
+      }
+    ],
+    "idx": 92
+  },
+  {
+    "domain": "recall",
+    "images": [
+      "imgs/fHEnekFGNMuDRKSJ_1.jpg",
+      "imgs/fHEnekFGNMuDRKSJ_2.jpg",
+      "imgs/fHEnekFGNMuDRKSJ_3.jpg",
+      "imgs/fHEnekFGNMuDRKSJ_4.jpeg",
+      "imgs/fHEnekFGNMuDRKSJ_5.jpeg",
+      "imgs/fHEnekFGNMuDRKSJ_6.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Edit the playroom from Image #1 by changing the background wall to a soft pastel color, leaving everything else as is."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #1": "Edit the playroom from <image> by changing the background wall to a soft pastel color, leaving everything else as is."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Edit the lighting in the playroom from Image #2 to make it appear as if natural sunlight is streaming in, keeping the other details unchanged."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "Image #2": "Edit the lighting in the playroom from <image> to make it appear as if natural sunlight is streaming in, keeping the other details unchanged."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Edit the playroom in Image #3 by removing the toy bear from the central area, but leave the rest untouched."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "Image #3": "Edit the playroom in <image> by removing the toy bear from the central area, but leave the rest untouched."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Edit the playroom in Image #4 by changing the image style into manga while keeping the existing layout and elements the same."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #5",
+        "key_point": {
+          "Image #4": "Edit the playroom in <image> by changing the image style into manga while keeping the existing layout and elements the same."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Transform the little bear from Image #2 into the style of Image #5, then add it into that image."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #6",
+        "key_point": {
+          "Image #5": "Add a same style little brown bear into the <image>."
+        }
+      }
+    ],
+    "idx": 93
+  },
+  {
+    "domain": "edit",
+    "images": [
+      "imgs/1kzrtDu8n6axw1wu_1.jpeg",
+      "imgs/1kzrtDu8n6axw1wu_2.jpg",
+      "imgs/1kzrtDu8n6axw1wu_3.jpg",
+      "imgs/1kzrtDu8n6axw1wu_4.jpg",
+      "imgs/1kzrtDu8n6axw1wu_5.jpg",
+      "imgs/1kzrtDu8n6axw1wu_6.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Edit the character from Image #1 by resizing her to appear bigger."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #1": "Edit the character from <image> by resizing her to appear bigger."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Edit the character from Image #2 by adding a cartoon cat sitting beside her."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "Image #2": "Edit the character from <image> by adding a cartoon cat sitting beside her."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Edit the character from Image #3 by rearranging the layout so the cat is sitting on her shoulder instead of beside her."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "Image #3": "Edit the character from <image> by rearranging the layout so the cat is sitting on her shoulder instead of beside her."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Edit the character from Image #4 by changing the weather to rainy in the neon-lit alley, while keeping the character and cat in their positions with the aura intact."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #5",
+        "key_point": {
+          "Image #4": "Edit the character from <image> by changing the weather to rainy in the neon-lit alley, while keeping the character and cat in their positions with the aura intact."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Edit the character from Image #5 by removing the aura effect."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #6",
+        "key_point": {
+          "Image #5": "Edit the character from <image> by removing the aura effect."
+        }
+      }
+    ],
+    "idx": 94
+  },
+  {
+    "domain": "edit",
+    "images": [
+      "imgs/8gxykGKUQy7PKoZD_1.jpg",
+      "imgs/8gxykGKUQy7PKoZD_2.jpg",
+      "imgs/8gxykGKUQy7PKoZD_3.jpg",
+      "imgs/8gxykGKUQy7PKoZD_4.jpg",
+      "imgs/8gxykGKUQy7PKoZD_5.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Edit the dress from Image #1 by changing its color to emerald green."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #1": "Edit the dress from <image> by changing its color to emerald green."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Add a subtle gold logo to the bottom left corner of the dress from Image #2."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "Image #2": "Add a subtle gold logo to the bottom left corner of the dress from <image>."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Change the background from Image #3 to feature large glass windows with city views."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "Image #3": "Change the background from <image> to feature large glass windows with city views."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Duplicate the dress with the gold logo from Image #4 so there are two models side by side wearing the same outfit."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #5",
+        "key_point": {
+          "Image #4": "Duplicate the dress with the gold logo from <image> so there are two models side by side wearing the same outfit."
+        }
+      }
+    ],
+    "idx": 95
+  },
+  {
+    "domain": "edit",
+    "images": [
+      "imgs/q9uOPnai8VEHyQ2f_1.jpg",
+      "imgs/q9uOPnai8VEHyQ2f_2.jpg",
+      "imgs/q9uOPnai8VEHyQ2f_3.jpg",
+      "imgs/q9uOPnai8VEHyQ2f_4.jpg",
+      "imgs/q9uOPnai8VEHyQ2f_5.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Edit the sweater from Image #1 by replacing it with a turtleneck sweater while keeping the rest of the image unchanged."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #1": "Edit the sweater from <image> by replacing it with a turtleneck sweater while keeping the rest of the image unchanged."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Edit the lighting style in Image #2 to create a warm golden hour effect, keeping everything else the same."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "Image #2": "Edit the lighting style in <image> to create a warm golden hour effect, keeping everything else the same."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Change the background in Image #3 to snowy mountain peaks, keeping the model and turtleneck unchanged."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "Image #3": "Change the background in <image> to snowy mountain peaks, keeping the model and turtleneck unchanged."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Edit Image #1 and change the background to a pine forest in the snow."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #5",
+        "key_point": {
+          "GT #1": "Edit <image> and change the background to a pine forest in the snow."
+        }
+      }
+    ],
+    "idx": 96
+  },
+  {
+    "domain": "edit",
+    "images": [
+      "imgs/ds8V9ENZx103Laqp_1.jpg",
+      "imgs/ds8V9ENZx103Laqp_2.jpg",
+      "imgs/ds8V9ENZx103Laqp_3.jpg",
+      "imgs/ds8V9ENZx103Laqp_4.jpeg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Edit the dress from Image #1 by adding a subtle gold belt at the waist and making the light slightly brighter."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #1": "Edit the dress from <image> by adding a subtle gold belt at the waist and making the light slightly brighter."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Edit the background of Image #2 to add a vintage convertible car parked a few meters behind the model."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "Image #2": "Edit the background of <image> to add a vintage convertible car parked a few meters behind the model."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Modify the Image #3 so that the person is sitting in the car, with the door open so that her body is halfway inside the car"
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "Image #3": "Modify the <image> so that the person is sitting in the car, with the door open so that her body is halfway inside the car."
+        }
+      }
+    ],
+    "idx": 97
+  },
+  {
+    "domain": "edit",
+    "images": [
+      "imgs/6jS6K4yfWPtzp86z_1.jpg",
+      "imgs/6jS6K4yfWPtzp86z_2.jpg",
+      "imgs/6jS6K4yfWPtzp86z_3.jpg",
+      "imgs/6jS6K4yfWPtzp86z_4.jpg",
+      "imgs/6jS6K4yfWPtzp86z_5.jpg",
+      "imgs/6jS6K4yfWPtzp86z_6.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Edit the photo from Image #1 by changing the background to a vibrant urban street setting, keeping the model and outfit the same."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #1": "Edit the photo from <image> by changing the background to a vibrant urban street setting, keeping the model and outfit the same."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Isolate the t-shirt from Image #2 and place it on a clean white display for a product-focused look."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "Image #2": "Isolate the t-shirt from <image> and place it on a clean white display for a product-focused look."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Duplicate the t-shirt from Image #3 so that two identical t-shirts appear side by side, without any change to the display."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "Image #3": "Duplicate the t-shirt from <image> so that two identical t-shirts appear side by side, without any change to the display."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Merge the jeans worn by the model in Image #2 onto one of the t-shirts in Image #4, creating a partial outfit display."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #5",
+        "key_point": {
+          "Image #4, Image #2": "Merge the jeans worn by the model in Image #2 onto one of the t-shirts in <image>, creating a partial outfit display."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Edit the lighting style in Image #5 to a dramatic high-contrast studio look without changing the clothing arrangement."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #6",
+        "key_point": {
+          "Image #5": "Edit the lighting style in <image> to a dramatic high-contrast studio look without changing the clothing arrangement."
+        }
+      }
+    ],
+    "idx": 98
+  },
+  {
+    "domain": "recall",
+    "images": [
+      "imgs/aZSdIU7q1myJo2l2_1.jpg",
+      "imgs/aZSdIU7q1myJo2l2_2.jpg",
+      "imgs/aZSdIU7q1myJo2l2_3.jpg",
+      "imgs/aZSdIU7q1myJo2l2_4.jpg"
+    ],
+    "chats": [
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Edit the Image #1 by changing the background to a more elegant dim sum hall interior, while keeping the food and drinks unchanged."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #2",
+        "key_point": {
+          "GT #1": "Edit the <image> by changing the background to a more elegant dim sum hall interior, while keeping the food and drinks unchanged."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Isolate the steamed buns from Image #2 and place them on a white plate by themselves on the same table."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #3",
+        "key_point": {
+          "Image #2": "Isolate the steamed buns from <image> and place them on a white plate by themselves on the same table."
+        }
+      },
+      {
+        "role": "user",
+        "type": "text",
+        "content": "Next to the plate of steamed buns in Image #3, place the jug of vinegar from Image #2."
+      },
+      {
+        "role": "assistant",
+        "type": "image",
+        "content": "Image #4",
+        "key_point": {
+          "Image #3": "The steamed buns are the same as in <image>",
+          "GT #1": "The transparent teapot containing vinegar is the same as in <image>"
+        }
+      }
+    ],
+    "idx": 99
+  }
+]
