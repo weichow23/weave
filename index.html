@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta property="og:title"
+        content="Weave: Unleashing and Benchmarking the Interleaved Cross-modality Comprehension and Generation" />
+    <meta property="og:url" content="https://weave.github.io/" />
+    <meta property="og:image" content="static/images/banner.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>Weave</title>
+    <link rel="icon" type="image/x-icon" href="static/images/icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+    <style>
+        :root {
+            --weave-blue: rgb(74, 159, 245);
+            --weave-orange: rgb(247, 183, 49);
+            --weave-yellow: rgb(244, 132, 95);
+            --weave-teal: rgb(78, 205, 196);
+        }
+        
+        .weave-title {
+            font-weight: bold;
+            font-variant: small-caps;
+        }
+        
+        .w-part { color: var(--weave-blue); }
+        .e-part { color: var(--weave-orange); }
+        .a-part { color: var(--weave-yellow); }
+        .v-part { color: var(--weave-teal); }
+        
+        .figure-caption {
+            font-size: 0.9em;
+            color: #666;
+            text-align: center;
+            margin-top: 0.8rem;
+            margin-bottom: 2rem;
+            font-style: italic;
+            line-height: 1.4;
+            padding: 0 1rem;
+        }
+        
+        /* Enhanced image styling with better spacing */
+        .main-figure {
+            margin: 2.5rem 0 1rem 0;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .main-figure:hover {
+            transform: translateY(-2px);
+        }
+        
+        .main-figure img {
+            width: 100%;
+            max-width: 800px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+        
+        .main-figure img:hover {
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .method-figure {
+            margin: 2rem 0 1rem 0;
+            text-align: center;
+        }
+        
+        .method-figure img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+        }
+        
+        .method-figure img:hover {
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.12);
+        }
+        
+        .dataset-figure {
+            margin: 1.5rem 0;
+            text-align: center;
+        }
+        
+        .dataset-figure img {
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+        }
+        
+        .result-figure {
+            margin: 1.8rem 0 1rem 0;
+            text-align: center;
+        }
+        
+        .result-figure img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 3px 18px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Enhanced content sections */
+        .content-section {
+            padding: 3rem 0;
+        }
+        
+        .content-section h2 {
+            margin-bottom: 2rem !important;
+        }
+        
+        .content-section h3 {
+            margin-top: 2.5rem !important;
+            margin-bottom: 1.5rem !important;
+        }
+        
+        /* Author link styling */
+        .author-block a {
+            color: #363636;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: all 0.2s ease;
+        }
+        
+        .author-block a:hover {
+            color: var(--weave-blue);
+            border-bottom-color: var(--weave-blue);
+        }
+        
+        /* Enhanced abstract section */
+        .abstract-section {
+            padding: 3rem 0 2rem 0;
+        }
+        
+        /* Method overview enhancements */
+        .method-section {
+            padding: 2.5rem 0;
+        }
+        
+        /* Dataset section styling */
+        .dataset-section {
+            padding: 2.5rem 0;
+        }
+        
+        .dataset-stats {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            margin-top: 1rem;
+        }
+        
+        .dataset-stats ul li {
+            margin-bottom: 0.5rem;
+            padding-left: 0.5rem;
+        }
+        
+        /* Results section */
+        .results-section {
+            padding: 2.5rem 0;
+        }
+        
+        .results-grid {
+            display: grid;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        /* Enhanced typography */
+        .content p {
+            line-height: 1.6;
+            margin-bottom: 1.2rem;
+        }
+        
+        /* Button enhancements */
+        .publication-links .button {
+            margin: 0.3rem;
+            transition: all 0.2s ease;
+        }
+        
+        .publication-links .button:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .figure-caption {
+                font-size: 0.85em;
+                padding: 0 0.5rem;
+            }
+            
+            .main-figure {
+                margin: 1.5rem 0 1rem 0;
+            }
+            
+            .content-section {
+                padding: 2rem 0;
+            }
+        }
+/* Leaderboard Styles */
+    .leaderboard-table {
+        width: 100%;
+        margin: 20px 0;
+        border-collapse: separate;
+        border-spacing: 0;
+        background: #ffffff;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+        font-size: 14px;
+    }
+
+    .leaderboard-container { 
+        position: relative; 
+        overflow-x: auto;
+    }
+
+    .leaderboard-table thead {
+        background: #4a5568;
+        color: white;
+    }
+
+    .leaderboard-table th {
+        padding: 8px 12px;
+        text-align: center;
+        font-weight: 600;
+        font-size: 13px;
+        letter-spacing: 0.025em;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        position: relative;
+        background: #4a5568;
+        color: white;
+        white-space: nowrap;
+    }
+
+    .sortable-header {
+        cursor: pointer;
+        user-select: none;
+    }
+    
+    .sortable-header .sort-indicator {
+        position: absolute;
+        right: 8px;
+        top: 50%;
+        font-size: 14px;
+        line-height: 1;
+        transform: translateY(-50%);
+        color: #a0aec0;
+    }
+
+    .sortable-header.active .sort-indicator {
+        color: white;
+    }
+    
+    .leaderboard-table td {
+        padding: 12px;
+        border-bottom: 1px solid #e2e8f0;
+        color: #4a5568;
+        text-align: center;
+    }
+    
+    .leaderboard-table tbody tr {
+        transition: background-color 0.15s ease;
+    }
+    
+    .leaderboard-table tbody tr:hover {
+        background-color: #f7fafc;
+    }
+
+    .leaderboard-table td:first-child {
+        font-weight: 600;
+        text-align: left;
+        color: #2d3748;
+        padding-left: 20px;
+        white-space: normal;
+        line-height: 1.6;
+    }
+
+    .model-badge {
+        display: inline-block;
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-size: 11px;
+        font-weight: 500;
+        margin-left: 6px;
+        text-transform: uppercase;
+        letter-spacing: 0.025em;
+    }
+
+    .proprietary-badge {
+        background: #e2e8f0;
+        color: #475569;
+        border: 1px solid #cbd5e0;
+    }
+
+    .open-badge {
+        background: #e6fffa;
+        color: #047857;
+        border: 1px solid #a7f3d0;
+    }
+    
+    .edit-badge {
+        background: #dbeafe;
+        color: #1e40af;
+        border: 1px solid #93c5fd;
+    }
+    
+    .leaderboard-table tbody tr:nth-child(even) {
+        background-color: #fafafa;
+    }
+    
+    .best-score {
+        font-weight: 700;
+        text-decoration: underline;
+        text-decoration-color: #cbd5e0;
+        text-underline-offset: 2px;
+    }
+
+    .org-logo {
+        height: 24px;
+        width: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .in-context-icon {
+        font-size: 14px;
+        color: #4a5568;
+    }
+
+    /* Mobile responsive adjustments */
+    @media (max-width: 768px) {
+        .leaderboard-container {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            scroll-behavior: smooth;
+        }
+        
+        .leaderboard-table {
+            min-width: 1000px;
+            font-size: 12px;
+        }
+        
+        .leaderboard-table th,
+        .leaderboard-table td {
+            padding: 8px;
+            white-space: nowrap;
+        }
+    }
+
+    /* Smaller Data Statistics table */
+    .compact-table {
+        font-size: 0.85rem;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .compact-table th,
+    .compact-table td {
+        padding: 0.4em 0.6em;
+    }
+
+    .compact-table td {
+        vertical-align: middle;
+    }
+    </style>
+
+    <link rel="stylesheet" href="static/css/bulma.min.css">
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script defer src="static/js/fontawesome.all.min.js"></script>
+    <script src="static/js/bulma-carousel.min.js"></script>
+    <script src="static/js/index.js"></script>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/4.1.1/gradio.js"></script>
+</head>
+
+<body>
+
+    <section class="hero banner">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column has-text-centered">
+                        <h1 class="title is-1 publication-title"><i class="pixart-alpha-icon"></i><span class="weave-title"><span class="w-part">W</span><span class="e-part">E</span><span class="a-part">A</span><span class="v-part">V</span><span class="e-part">E</span></span><br />
+                            Unleashing and Benchmarking the Interleaved Cross-modality Comprehension and Generation</h1>
+                        <div class="is-size-5 publication-authors">
+                            <!-- Paper authors -->
+                            <span class="author-block">
+                                <a href="https://scholar.google.com/citations?user=br7-IGkAAAAJ&hl=en" target="_blank">Wei
+                                    Chow</a><sup>1,*</sup>,</span>
+                            <span class="author-block">
+                                <a href="https://weichow23.github.io/editmgt/" target="_blank">Linfeng
+                                    Li</a><sup>1,*</sup>,</span>
+                            <span class="author-block">
+                                <a href="https://ldkong.com/" target="_blank">Lingdong Kong</a><sup>1</sup>,</span>
+                            <span class="author-block">
+                                <a href="https://weichow23.github.io/editmgt/" target="_blank">Zefeng Li</a><sup>1</sup>,
+                            </span>
+                            <span class="author-block">
+                                <a href="https://weichow23.github.io/editmgt/" target="_blank">Qi Xu</a><sup>1</sup>,
+                            </span>
+                            <span class="author-block">
+                                <a href="https://weichow23.github.io/editmgt/" target="_blank">Hang Song</a><sup>1</sup>,
+                            </span>
+                            <br>
+                            <span class="author-block">
+                                <a href="https://owen718.github.io/" target="_blank">Tian Ye</a><sup>4</sup>,
+                            </span>
+                            <span class="author-block">
+                                <a href="https://weichow23.github.io/editmgt/" target="_blank">Xian Wang</a><sup>1</sup>,
+                            </span>
+                            <span class="author-block">
+                                <a href="https://weichow23.github.io/editmgt/" target="_blank">Jinbin Bai</a><sup>3</sup>,
+                            </span>
+                            <span class="author-block">
+                                <a href="https://weichow23.github.io/editmgt/" target="_blank">Shilin Xu</a><sup>1</sup>,
+                            </span>
+                            <span class="author-block">
+                                <a href="https://weichow23.github.io/editmgt/" target="_blank">Xiangtai Li</a><sup>1</sup>,
+                            </span>
+                            <span class="author-block">
+                                <a href="https://weichow23.github.io/editmgt/" target="_blank">Junting Pan</a><sup>1</sup>,
+                            </span>
+                            <span class="author-block">
+                                <a href="https://weichow23.github.io/editmgt/" target="_blank">Shaoteng Liu</a><sup>1</sup>,
+                            </span>
+                            <br>
+                            <span class="author-block">
+                                <a href="https://scholar.google.com/citations?user=39enosUAAAAJ&hl=en" target="_blank">Ran Zhou</a><sup>1</sup>,
+                            </span>
+                            <span class="author-block">
+                                <a href="https://weichow23.github.io/editmgt/" target="_blank">Tianshu Yang</a><sup>1</sup>,
+                            </span>
+                            <span class="author-block">
+                                <a href="https://huage001.github.io/" target="_blank">Songhua Liu</a><sup>2</sup>,
+                            </span>
+                        </div>
+
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block"><sup>1</sup>National University of Singapore,</span>
+                            <span class="author-block"><sup>2</sup>University of Maryland, College Park,</span>
+                            <br>
+                            <span class="author-block"><sup>3</sup>Nanyang Technological University,</span>
+                            <span class="author-block"><sup>4</sup>Zhejiang University</span>
+                            <span class="eql-cntrb"><small><br><sup>*</sup>Equal contribution. <sup>†</sup>Correspondence.</small></span>
+                        </div>
+
+                        <div class="column has-text-centered">
+                            <div class="publication-links">
+                                <span class="link-block">
+                                    <a href="" target="_blank"
+                                        class="external-link button is-normal is-rounded is-white">
+                                        <span class="icon">
+                                            <i class="ai ai-arxiv"></i>
+                                        </span>
+                                        <span>arXiv (Soon)</span>
+                                    </a>
+                                </span>
+                                <span class="link-block">
+                                    <a href="" target="_blank"
+                                        class="external-link button is-normal is-rounded is-white">
+                                        <span class="icon">
+                                            <i class="fab fa-github"></i>
+                                        </span>
+                                        <span>Code (Soon)</span>
+                                    </a>
+                                </span>
+                                <span class="link-block">
+                                    <a href="https://huggingface.co/datasets/WeiChow/WEAVE" target="_blank"
+                                        class="external-link button is-normal is-rounded is-white">
+                                        <span class="icon">🤗</span>
+                                        <span>WEAVE-100k</span>
+                                    </a>
+                                </span>
+                                <span class="link-block">
+                                    <a href="https://huggingface.co/datasets/WeiChow/WEAVE" target="_blank"
+                                        class="external-link button is-normal is-rounded is-white">
+                                        <span class="icon">🤗</span>
+                                        <span>WEAVEBench</span>
+                                    </a>
+                                </span>
+                                <span class="link-block">
+                                    <a href="https://huggingface.co/WeiChow/Bagel-weave" target="_blank"
+                                        class="external-link button is-normal is-rounded is-white">
+                                        <span class="icon">🧨</span>
+                                        <span>Finetuned Bagel</span>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Paper abstract -->
+    <section class="section hero is-light abstract-section">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Abstract</h2>
+                    
+                    <div class="content has-text-justified">
+                        <p>
+                            Recent advances in unified multimodal models (UMMs) have enabled impressive progress in visual comprehension and generation. 
+                            However, existing datasets and benchmarks focus primarily on single-turn interactions, failing to capture the multi-turn, context-dependent nature of real-world image creation and editing.
+                            To address this gap, we present <span class="weave-title"><span class="w-part">W</span><span class="e-part">E</span><span class="a-part">A</span><span class="v-part">V</span><span class="e-part">E</span></span>, a new benchmark suite for interleaved cross-modality comprehension and generation.
+                            Our benchmark consists of two complementary parts. 
+                            <span class="weave-title"><span class="w-part">W</span><span class="e-part">E</span><span class="a-part">A</span><span class="v-part">V</span><span class="e-part">E</span></span>-100k is a large-scale dataset of 102K interleaved samples spanning over 600K dialogue turns and 700K images, covering comprehension, editing, and generation tasks that require reasoning over historical context. <span class="weave-title"><span class="w-part">W</span><span class="e-part">E</span><span class="a-part">A</span><span class="v-part">V</span><span class="e-part">E</span></span>Bench is a human-verified evaluation benchmark with 100 tasks based on 600 images, featuring an agent-based and expert-verified evaluation framework that assesses models' abilities in multi-turn generation, visual memory, and world-knowledge reasoning across diverse domains such as science, creation, logic, and games.
+                            Experiments demonstrate that training on <span class="weave-title"><span class="w-part">W</span><span class="e-part">E</span><span class="a-part">A</span><span class="v-part">V</span><span class="e-part">E</span></span>-100k enables unified multimodal models to develop emergent visual-memory capabilities, while evaluations on <span class="weave-title"><span class="w-part">W</span><span class="e-part">E</span><span class="a-part">A</span><span class="v-part">V</span><span class="e-part">E</span></span>Bench expose the persistent limitations and challenges of current approaches in multi-turn, context-aware image generation.
+                            We believe Weave provides a foundation for studying long-context reasoning and editing in interleaved vision-language models.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End paper abstract -->
+
+    <!-- Data Overview Section -->
+<section class="hero is-small method-section">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <h2 class="title is-3">Data Overview</h2>
+            
+            <div class="method-figure">
+                <img loading="lazy" src="static/images/compare.png" alt="Comparison Figure" />
+                <div class="figure-caption">
+                    <strong>Figure 1:</strong> Compared to previous works that focus on single-turn edits (a), <span class="weave-title"><span class="w-part">W</span><span class="e-part">E</span><span class="a-part">A</span><span class="v-part">V</span><span class="e-part">E</span></span> uniquely enables multi-turn editing with visual memory recall (b), allowing models to reference and restore previously edited elements across multiple turns.
+                </div>
+            </div>
+
+            <div class="columns is-centered">
+                <div class="column is-4">
+                    <div class="table-container">
+                        <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth compact-table">
+                            <thead>
+                                <tr>
+                                    <th>Statistic</th>
+                                    <th>Number</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="background-color: rgba(74, 159, 245, 0.15)">
+                                    <td><span style="color: rgb(74, 159, 245)">• Total Chats</span></td>
+                                    <td>100,750</td>
+                                </tr>
+                                <tr>
+                                    <td>- ≥4 Images Chats</td>
+                                    <td>100,584</td>
+                                </tr>
+                                <tr>
+                                    <td>- ≥5 Images Chats</td>
+                                    <td>60,361</td>
+                                </tr>
+                                <tr>
+                                    <td>- ≥6 Images Chats</td>
+                                    <td>31,571</td>
+                                </tr>
+                                <tr style="background-color: rgba(247, 183, 49, 0.15)">
+                                    <td><span style="color: rgb(247, 183, 49)">• Average Chat Turns</span></td>
+                                    <td>3.79</td>
+                                </tr>
+                                <tr>
+                                    <td>- Average Question Length</td>
+                                    <td>195.49</td>
+                                </tr>
+                                <tr style="background-color: rgba(244, 132, 95, 0.15)">
+                                    <td><span style="color: rgb(244, 132, 95)">• Total Images</span></td>
+                                    <td>505,186</td>
+                                </tr>
+                                <tr>
+                                    <td>- Maximum Images Per Chat</td>
+                                    <td>8</td>
+                                </tr>
+                                <tr>
+                                    <td>- Average Images Per Chat</td>
+                                    <td>5.01</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="column is-8">
+                    <div class="method-figure">
+                        <img loading="lazy" src="static/images/donut_chart.png" alt="Domain distributions and evaluation methods" />
+                        <div class="figure-caption">
+                            <strong>Figure 2:</strong> Summary of domain distributions and evaluation methods for <span class="weave-title"><span class="w-part">W</span><span class="e-part">E</span><span class="a-part">A</span><span class="v-part">V</span><span class="e-part">E</span></span>.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content has-text-justified">
+                <p>
+                    For each instance in <span class="weave-title"><span class="w-part">W</span><span class="e-part">E</span><span class="a-part">A</span><span class="v-part">V</span><span class="e-part">E</span></span>, we provide a text prompt, one or more initial images, and ground truth examples. The test set additionally includes key information that the correct output images must satisfy.
+                </p>
+                <p>
+                    Our evaluation framework adopts a VLM-as-judge approach with a key-point-based scoring system that focuses on four metrics:
+                </p>
+                <ul>
+                    <li><strong>Key Point Correctness (KP):</strong> Measures whether the edited image satisfies the specified editing requirements.</li>
+                    <li><strong>Visual Consistency (VC):</strong> Ensures non-target elements remain unchanged and maintains consistency with the original image.</li>
+                    <li><strong>Image Quality (IQ):</strong> Evaluates the overall quality of the generated image.</li>
+                    <li><strong>Accuracy (Acc):</strong> Measures the correctness of the reasoning result for comprehension tasks.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Related Works Section -->
+    <section class="hero is-small is-light method-section">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <h2 class="title is-3">Leaderboard</h2>
+
+<!-- Leaderboard HTML -->
+<div id="weave-leaderboard" class="leaderboard-container">
+    <table class="leaderboard-table">
+        <thead>
+            <tr>
+                <th data-column-index="0">Model</th>
+                <th data-column-index="1">Organizor</th>
+                <th data-column-index="2">Size</th>
+                <th data-column-index="3">In-context</th>
+                <th data-column-index="4">Modality</th>
+                <th data-column-index="5">Science</th>
+                <th data-column-index="6">Creation</th>
+                <th data-column-index="7">Logic</th>
+                <th data-column-index="8">Game</th>
+                <th data-column-index="9" class="sortable-header">Avg <span class="sort-indicator">▼</span></th>
+            </tr>
+        </thead>
+        <tbody id="leaderboard-body">
+            <!-- AnyEdit -->
+            <tr>
+                <td>AnyEdit</td>
+                <td><img src="./static/images/org/zju.png" alt="AnyEdit" class="org-logo"></td>
+                <td>1B</td>
+                <td><i class="in-context-icon fa fa-adjust"></i></td>
+                <td><i class="fa fa-image"></i></td>
+                <td>0.445</td>
+                <td>0.514</td>
+                <td>0.351</td>
+                <td>0.419</td>
+                <td>0.472</td>
+            </tr>
+            <!-- UltraEdit(SD3) -->
+            <tr>
+                <td>UltraEdit(SD3)</td>
+                <td><img src="./static/images/org/pku.png" alt="UltraEdit" class="org-logo"></td>
+                <td>2B</td>
+                <td><i class="in-context-icon fa fa-adjust"></i></td>
+                <td><i class="fa fa-image"></i></td>
+                <td>0.493</td>
+                <td>0.561</td>
+                <td>0.491</td>
+                <td>0.440</td>
+                <td>0.522</td>
+            </tr>
+            <!-- VAREdit-8B -->
+            <tr>
+                <td>VAREdit-8B</td>
+                <td><img src="./static/images/org/hidream.png" alt="VAREdit" class="org-logo"></td>
+                <td>8B</td>
+                <td><i class="in-context-icon fa fa-adjust"></i></td>
+                <td><i class="fa fa-image"></i></td>
+                <td>0.536</td>
+                <td>0.636</td>
+                <td>0.584</td>
+                <td>0.580</td>
+                <td>0.603</td>
+            </tr>
+            <!-- Step1X-Edit v1.1 -->
+            <tr>
+                <td>Step1X-Edit v1.1</td>
+                <td><img src="./static/images/org/stepfun.png" alt="Step1X" class="org-logo"></td>
+                <td>12B</td>
+                <td><i class="in-context-icon fa fa-adjust"></i></td>
+                <td><i class="fa fa-image"></i></td>
+                <td>0.574</td>
+                <td>0.714</td>
+                <td>0.700</td>
+                <td>0.625</td>
+                <td>0.669</td>
+            </tr>
+            <!-- Step1X-Edit v1.2 -->
+            <tr>
+                <td>Step1X-Edit v1.2</td>
+                <td><img src="./static/images/org/stepfun.png" alt="Step1X" class="org-logo"></td>
+                <td>12B</td>
+                <td><i class="in-context-icon fa fa-adjust"></i></td>
+                <td><i class="fa fa-image"></i></td>
+                <td>0.560</td>
+                <td>0.644</td>
+                <td>0.530</td>
+                <td>0.562</td>
+                <td>0.605</td>
+            </tr>
+            <!-- FLUX.1 Kontext -->
+            <tr>
+                <td>FLUX.1 Kontext</td>
+                <td><img src="./static/images/org/blackforest.webp" alt="FLUX" class="org-logo"></td>
+                <td>12B</td>
+                <td><i class="in-context-icon fa fa-adjust"></i></td>
+                <td><i class="fa fa-image"></i></td>
+                <td>0.589</td>
+                <td>0.756</td>
+                <td>0.639</td>
+                <td>0.610</td>
+                <td>0.689</td>
+            </tr>
+            <!-- Qwen-Image-Edit -->
+            <tr>
+                <td>Qwen-Image-Edit</td>
+                <td><img src="./static/images/org/qwen.png" alt="Qwen" class="org-logo"></td>
+                <td>20B</td>
+                <td><i class="in-context-icon fa fa-adjust"></i></td>
+                <td><i class="fa fa-image"></i></td>
+                <td>0.586</td>
+                <td>0.715</td>
+                <td>0.589</td>
+                <td>0.628</td>
+                <td>0.665</td>
+            </tr>
+            <!-- OminiGen -->
+            <tr>
+                <td>OminiGen</td>
+                <td><img src="./static/images/org/baai.png" alt="OminiGen" class="org-logo"></td>
+                <td>4B</td>
+                <td><i class="in-context-icon fa fa-adjust"></i></td>
+                <td><i class="fa fa-image"></i></td>
+                <td>0.398</td>
+                <td>0.474</td>
+                <td>0.401</td>
+                <td>0.177</td>
+                <td>0.404</td>
+            </tr>
+            <!-- OminiGen2 -->
+            <tr>
+                <td>OminiGen2</td>
+                <td><img src="./static/images/org/baai.png" alt="OminiGen" class="org-logo"></td>
+                <td>7B</td>
+                <td><i class="in-context-icon fa fa-adjust"></i></td>
+                <td><i class="fa fa-asterisk"></i></td>
+                <td>0.511</td>
+                <td>0.682</td>
+                <td>0.551</td>
+                <td>0.511</td>
+                <td>0.609</td>
+            </tr>
+            <!-- Ovis-U1 -->
+            <tr>
+                <td>Ovis-U1</td>
+                <td><img src="./static/images/org/aidc.webp" alt="Ovis" class="org-logo"></td>
+                <td>3B</td>
+                <td><i class="in-context-icon fa fa-adjust"></i></td>
+                <td><i class="fa fa-asterisk"></i></td>
+                <td>0.402</td>
+                <td>0.557</td>
+                <td>0.364</td>
+                <td>0.357</td>
+                <td>0.422</td>
+            </tr>
+            <!-- UniPic -->
+            <tr>
+                <td>UniPic</td>
+                <td><img src="./static/images/org/skywork.png" alt="UniPic" class="org-logo"></td>
+                <td>1.5B</td>
+                <td><i class="in-context-icon fa fa-adjust"></i></td>
+                <td><i class="fa fa-image"></i></td>
+                <td>0.472</td>
+                <td>0.590</td>
+                <td>0.463</td>
+                <td>0.316</td>
+                <td>0.511</td>
+            </tr>
+            <!-- UniPic2-SD3.5M -->
+            <tr>
+                <td>UniPic2-SD3.5M</td>
+                <td><img src="./static/images/org/skywork.png" alt="UniPic" class="org-logo"></td>
+                <td>2B</td>
+                <td><i class="in-context-icon fa fa-adjust"></i></td>
+                <td><i class="fa fa-image"></i></td>
+                <td>0.477</td>
+                <td>0.625</td>
+                <td>0.543</td>
+                <td>0.497</td>
+                <td>0.568</td>
+            </tr>
+            <!-- UniPic2-Metaquery -->
+            <tr>
+                <td>UniPic2-Metaquery</td>
+                <td><img src="./static/images/org/skywork.png" alt="UniPic" class="org-logo"></td>
+                <td>9B</td>
+                <td><i class="in-context-icon fa fa-adjust"></i></td>
+                <td><i class="fa fa-image"></i></td>
+                <td>0.493</td>
+                <td>0.666</td>
+                <td>0.507</td>
+                <td>0.444</td>
+                <td>0.582</td>
+            </tr>
+            <!-- NextStep-1-Large -->
+            <tr>
+                <td>NextStep-1-Large</td>
+                <td><img src="./static/images/org/stepfun.png" alt="NextStep" class="org-logo"></td>
+                <td>15B</td>
+                <td><i class="in-context-icon fa fa-adjust"></i></td>
+                <td><i class="fa fa-image"></i></td>
+                <td>0.519</td>
+                <td>0.620</td>
+                <td>0.437</td>
+                <td>0.309</td>
+                <td>0.534</td>
+            </tr>
+            <!-- Seedream 4.0 (adjust) -->
+            <tr>
+                <td>Seedream 4.0</td>
+                <td><img src="./static/images/org/bytedance.png" alt="Seedream" class="org-logo"></td>
+                <td>-</td>
+                <td><i class="in-context-icon fa fa-adjust"></i></td>
+                <td><i class="fa fa-image"></i></td>
+                <td>0.683</td>
+                <td>0.847</td>
+                <td>0.679</td>
+                <td>0.635</td>
+                <td>0.765</td>
+            </tr>
+            <!-- Seedream 4.0 (check) -->
+            <tr>
+                <td>Seedream 4.0</td>
+                <td><img src="./static/images/org/bytedance.png" alt="Seedream" class="org-logo"></td>
+                <td>-</td>
+                <td><i class="in-context-icon fa fa-check"></i></td>
+                <td><i class="fa fa-image"></i></td>
+                <td>0.667</td>
+                <td>0.830</td>
+                <td>0.646</td>
+                <td>0.599</td>
+                <td>0.746</td>
+            </tr>
+            <!-- Nano Banana (adjust) -->
+            <tr>
+                <td>Nano Banana</td>
+                <td><img src="./static/images/org/google.png" alt="Google" class="org-logo"></td>
+                <td>-</td>
+                <td><i class="in-context-icon fa fa-adjust"></i></td>
+                <td><i class="fa fa-image"></i></td>
+                <td>0.715</td>
+                <td>0.823</td>
+                <td>0.666</td>
+                <td>0.666</td>
+                <td>0.764</td>
+            </tr>
+            <!-- Nano Banana (check) -->
+            <tr>
+                <td>Nano Banana</td>
+                <td><img src="./static/images/org/google.png" alt="Google" class="org-logo"></td>
+                <td>-</td>
+                <td><i class="in-context-icon fa fa-check"></i></td>
+                <td><i class="fa fa-image"></i></td>
+                <td>0.710</td>
+                <td>0.843</td>
+                <td>0.730</td>
+                <td>0.613</td>
+                <td class="best-score">0.767</td>
+            </tr>
+            <!-- Bagel -->
+            <tr>
+                <td>Bagel</td>
+                <td><img src="./static/images/org/bytedance.png" alt="Bagel" class="org-logo"></td>
+                <td>14B</td>
+                <td><i class="in-context-icon fa fa-adjust"></i></td>
+                <td><i class="fa fa-asterisk"></i></td>
+                <td>0.378</td>
+                <td>0.475</td>
+                <td>0.406</td>
+                <td>0.365</td>
+                <td>0.446</td>
+            </tr>
+            <!-- Bagel-Zebra -->
+            <tr>
+                <td>Bagel-Zebra</td>
+                <td><img src="./static/images/org/bytedance.png" alt="Bagel" class="org-logo"></td>
+                <td>14B</td>
+                <td><i class="in-context-icon fa fa-adjust"></i></td>
+                <td><i class="fa fa-asterisk"></i></td>
+                <td>0.399</td>
+                <td>0.456</td>
+                <td>0.393</td>
+                <td>0.396</td>
+                <td>0.449</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dataset Section -->
+    <section class="hero is-small dataset-section">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <h2 class="title is-3">Dataset Details</h2>
+                <h3 class="title is-4">Data Visualization</h3>
+
+                <h3 class="title is-4">Data Collection</h3>
+                <div class="method-figure">
+                    <img loading="lazy" src="static/images/pipe.png" alt="Data Annotation Pipeline" />
+                    <div class="figure-caption">
+                        <strong>Figure 3:</strong> Data Annotation Pipeline for <span class="weave-title"><span class="w-part">W</span><span class="e-part">E</span><span class="a-part">A</span><span class="v-part">V</span><span class="e-part">E</span></span>. Our methodology ensures data diversity and quality through a multi-round image generation process, supplemented by two rounds of validation and refinement.
+                    </div>
+                </div>
+                
+                <div class="dataset-figure">
+                    <img loading="lazy" src="static/images/teaser.png" alt="WeaveBench Overview" />
+                    <div class="figure-caption">
+                        <strong>Figure 4:</strong> Overview for <span class="weave-title"><span class="w-part">W</span><span class="e-part">E</span><span class="a-part">A</span><span class="v-part">V</span><span class="e-part">E</span></span>Bench. We have shown only a subset of the generated tasks.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiments Section -->
+    <!-- <section class="hero is-small results-section"> -->
+    <section class="hero is-small is-light method-section">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <h2 class="title is-3">Findings and Insights</h2>
+                
+                <div class="content has-text-justified">
+
+                    <p>
+                        <strong>In-context image generation remains challenging.</strong> Among the models tested, the best-performing Edit and UMM approaches achieved maximum scores of only 0.68 and 0.767, respectively. Furthermore, significant domain biases were observed, with performance in creative imagery consistently surpassing that in scientific and logical domains. This suggests substantial room for improvement in generative models' ability to effectively integrate world knowledge.
+                    </p>
+                    
+                    <p>
+                        <strong>In-context history usage matters</strong> 
+                    </p>
+                    <p>
+                        (a) For comprehension tasks, we observed significant performance improvements when utilizing in-context information compared to baseline conditions without historical context. This effect was particularly pronounced in QwenVL, which demonstrated a remarkable 163% improvement, indicating that <span class="weave-title"><span class="w-part">W</span><span class="e-part">E</span><span class="a-part">A</span><span class="v-part">V</span><span class="e-part">E</span></span>Bench successfully incorporated historical information into the model evaluation.
+                    </p>
+                    <p>
+                        (b) For generation tasks, increasing history length produced divergent effects across model types. Open-source models exhibited progressive performance degradation with additional historical context—Qwen-Edit showed decremental performance of 5.3% and 8.6% respectively. This suggests that open-source models, constrained by single-round editing capabilities, experience diminished localization accuracy when processing expanded contextual information, thereby failing to effectively utilize in-context data. Conversely, proprietary models such as Nano demonstrated incremental improvement, indicating successful utilization of contextual information.
+                    </p>
+                    <p>
+                        (c) <span class="weave-title"><span class="w-part">W</span><span class="e-part">E</span><span class="a-part">A</span><span class="v-part">V</span><span class="e-part">E</span></span>Bench exhibits superior image quality. Incorporating <span class="weave-title"><span class="w-part">W</span><span class="e-part">E</span><span class="a-part">A</span><span class="v-part">V</span><span class="e-part">E</span></span>Bench's ground truth images as in-context examples resulted in performance improvements across all models. Notably, Qwen-Image-Edit demonstrated a significant improvement of 7.1%, potentially attributable to Qwen's inherently weaker generative capabilities compared to nano-banana.
+                    </p>
+                    
+                    <p>
+                        <strong>Sequential Input Superiority.</strong> Sequential image input demonstrates significant performance advantages over concatenated input. This effect is particularly pronounced with the Bagel model, where concatenation results in a 10.3% performance degradation. These findings highlight the potential of UMMs as effective editing models, especially considering that traditional editing models cannot directly process multiple images and historical information as input.
+                    </p>
+                </div>
+
+                <div class="result-figure">
+                    <img loading="lazy" src="static/images/ablation.png" alt="Ablation Studies" />
+                    <div class="figure-caption">
+                        <strong>Figure 5:</strong> <strong>(a)</strong> Impact of different in-context modes on performance. <strong>(b)</strong> Reasoning performance using ground truth as in-context examples. <strong>(c)</strong> Performance variations when concatenating sequential images. <strong>(d)</strong> Evaluation reliability of GPT4.1 judger.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--BibTex citation -->
+    <section class="section" id="BibTeX">
+        <div class="container is-max-desktop content">
+            <h2 class="title">BibTeX</h2>
+            <pre><code>
+</code></pre>
+        </div>
+    </section>
+    <!--End BibTex citation -->
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-8">
+                    <div class="content">
+                        <p>
+                            This page was built using the <a
+                                href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                                target="_blank">Academic Project Page Template</a> which was adopted from the <a
+                                href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+                            You are free to borrow the of this website, we just ask that you link back to this page in
+                            the footer. <br> This website is licensed under a <a rel="license"
+                                href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                                Commons Attribution-ShareAlike 4.0 International License</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<!-- function -->
+<!-- Font Awesome (for icons) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<!-- Sorting Script -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const table = document.querySelector('.leaderboard-table');
+    if (!table) return; // Exit if table doesn't exist
+    
+    const thead = table.querySelector('thead');
+    const tbody = document.getElementById('leaderboard-body');
+    
+    // Default sort configuration: by Avg column (index 8), descending
+    let sortConfig = {
+        columnIndex: 9, 
+        direction: 'desc'
+    };
+
+    const headers = thead.querySelectorAll('th[data-column-index]');
+
+    function updateSortIndicators() {
+        headers.forEach(h => {
+            const indicator = h.querySelector('.sort-indicator');
+            if (indicator) {
+                const hIndex = parseInt(h.dataset.columnIndex);
+                if (hIndex === sortConfig.columnIndex) {
+                    indicator.textContent = sortConfig.direction === 'asc' ? '▲' : '▼';
+                    h.classList.add('active');
+                } else {
+                    indicator.textContent = '';
+                    h.classList.remove('active');
+                }
+            }
+        });
+    }
+
+    function parseSize(size) {
+        if (size === '-') return -1;
+        if (size.includes('B')) {
+            const num = parseFloat(size.replace('B', ''));
+            return isNaN(num) ? -1 : num;
+        }
+        return parseFloat(size) || -1;
+    }
+
+    function compareValues(valA, valB, index) {
+        // Model name (string comparison)
+        if (index === 0) { 
+            return valA.localeCompare(valB);
+        }
+        // Organization (string comparison)
+        else if (index === 1) { 
+            return valA.localeCompare(valB);
+        }
+        // Size column (special parsing)
+        else if (index === 2) {
+            return parseSize(valA) - parseSize(valB);
+        }
+        // In-context column (special handling)
+        else if (index === 3) {
+            const iconA = valA.includes('check') ? 2 : (valA.includes('adjust') ? 1 : 0);
+            const iconB = valB.includes('check') ? 2 : (valB.includes('adjust') ? 1 : 0);
+            return iconA - iconB;
+        }
+        // Numeric columns
+        else {
+            const numA = parseFloat(valA);
+            const numB = parseFloat(valB);
+            
+            if (!isNaN(numA) && !isNaN(numB)) {
+                return numA - numB;
+            }
+            if (!isNaN(numA)) return -1;
+            if (!isNaN(numB)) return 1;
+            return 0;
+        }
+    }
+
+    function sortTable() {
+        const rows = Array.from(tbody.querySelectorAll('tr'));
+        const direction = sortConfig.direction === 'asc' ? 1 : -1;
+
+        rows.sort((rowA, rowB) => {
+            const cellA = rowA.children[sortConfig.columnIndex].innerHTML.trim();
+            const cellB = rowB.children[sortConfig.columnIndex].innerHTML.trim();
+            return compareValues(cellA, cellB, sortConfig.columnIndex) * direction;
+        });
+
+        // Clear the table and append sorted rows
+        while (tbody.firstChild) {
+            tbody.removeChild(tbody.firstChild);
+        }
+        
+        rows.forEach(row => tbody.appendChild(row));
+        updateSortIndicators();
+    }
+
+    // Add click listeners to all headers
+    headers.forEach(header => {
+        // Skip if already has sort indicator
+        if (!header.classList.contains('sortable-header')) {
+            header.classList.add('sortable-header');
+            const indicator = document.createElement('span');
+            indicator.className = 'sort-indicator';
+            header.appendChild(indicator);
+        }
+
+        header.addEventListener('click', () => {
+            const columnIndex = parseInt(header.dataset.columnIndex);
+            if (sortConfig.columnIndex === columnIndex) {
+                sortConfig.direction = sortConfig.direction === 'asc' ? 'desc' : 'asc';
+            } else {
+                sortConfig.columnIndex = columnIndex;
+                sortConfig.direction = 'desc';
+            }
+            sortTable();
+        });
+    });
+
+    // Initial sort
+    sortTable();
+});
+</script>
+
+
+</body>
+
+</html>
