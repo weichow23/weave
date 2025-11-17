@@ -4,7 +4,7 @@
 
 <div align="center">
 
-[![arXiv](https://img.shields.io/badge/arXiv-2511.15738-b31b1b.svg)]()
+[![arXiv](https://img.shields.io/badge/arXiv-2511.11434-b31b1b.svg)](https://arxiv.org/abs/2511.11434)
 [![Dataset](https://img.shields.io/badge/🤗%20Huggingface-Dataset-yellow)](https://huggingface.co/datasets/WeiChow/Weave/)
 [![Checkpoint](https://img.shields.io/badge/🤗%20Huggingface-CKPT-blue)](https://huggingface.co/WeiChow/Bagel-weave)
 [![GitHub](https://img.shields.io/badge/GitHub-Repo-181717?logo=github)](https://github.com/weichow23/weave)
